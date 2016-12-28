@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html ng-app="myPortfolio">
+  <head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./animations.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100|Lato:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  </head>
+  <body jquery-directive ng-controller="mainController">
+
+    <div class="homeContainer">
+        <div class="backgroundImage">
+          <div class="homeLogo">
+            <div class="homeName">MAX JACOBSON</div>
+            <div class="homeTagline">DEVELOPER</div>
+          </div>
+          <div class="homeCarousel">
+            <p id="{{test1}}" class="homeDescription1">CREATING PROFESSIONAL</br> DESIGNS</p>
+            <p id="{{test2}}" class="homeDescription2">CLEAN AND EFFECTIVE</br> WEBSITES</p>
+            <p id="{{test3}}" class="homeDescription3">POWERFUL AND CREATIVE</br> THINKING</p>
+          </div>
+        </div>
+
+          <div class="navBar">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">MY RESUME</a></li>
+              <li><a href="#">MY SKILLS</a></li>
+              <li><a href="#">TESTIMONIALS</a></li>
+              <li><a href="#">PORTFOLIO</a></li>
+              <li><a href="#">CONTACTS</a></li>
+            </ul>
+          </div>
+
+          <div class="aboutMeContainer">
+            <div class="aboutMeSection">
+              <div id="aboutMeTitle">ABOUT ME</div>
+              <div class="aboutMeMain">
+                <img src="./assets/profile.jpg" alt="" id="profilePicture">
+                <div id="profileDescription">
+                  <div class="profileParagraph">
+                    Spicy jalapeno bacon ipsum dolor amet biltong beef cupim meatloaf tenderloin, bresaola sirloin fatback t-bone porchetta. Shank pastrami landjaeger filet mignon prosciutto shankle fatback turducken tri-tip kevin spare ribs sausage chuck bresaola. Leberkas shoulder meatloaf brisket beef ribs. Brisket jerky tenderloin turkey chuck. Porchetta boudin tail leberkas shankle meatloaf. Strip steak bacon turkey ham hock, porchetta kevin venison ribeye drumstick alcatra pancetta. Venison beef ribs pork, tail cupim t-bone strip steak porchetta brisket pork chop sirloin.
+                  </div>
+                  <div id="paragraphDetails">
+                    <ul>
+                      <li><h5>RESIDENCE</br><span>Spanish Fork, UT<span></h5></li>
+                      <li><h5>BORN</br><span>1987</span></h5></li>
+                      <li><h5>EMAIL</br><span>mjacobson7@gmail.com</span></h5></li>
+                      <li><h5>BRAGGING RIGHTS</br><span>Once solved a Rubik's Cube in 47 Seconds</span></h5></li>
+                    </ul>
+                  </div>
+                  <div class="downloadResume">
+                    <i class="material-icons">file_download</i>
+                    <p>DOWNLOAD RESUME</p>
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="myResumeContainer">
+            <div class="myResumeSection">
+              <div id="myResumeTitle" class="myResumeTitle">MY RESUME</div>
+
+              <div id="educationTitle1" class="educationTitle">EDUCATION</div>
+
+              <div class="myResumeEducation">
+                <div id="education1" class="education">
+                  <div class="educationDate">
+                    <div class="dateBox">APRIL 2016</br> - </br>AUGUST 2016</div>
+                  </div>
+                  <div class="educationName">
+                    <div class="dot"></div>
+                    <div class="collegeParagraph">
+                      <div class="collegeTitle">DEV MOUNTAIN</div>
+                      <div class="collegeDescription">
+                        Spicy jalapeno bacon ipsum dolor amet biltong beef cupim meatloaf tenderloin, bresaola sirloin fatback t-bone porchetta. Shank pastrami landjaeger filet mignon prosciutto shankle fatback turducken tri-tip kevin spare ribs sausage chuck bresaola. Leberkas shoulder meatloaf brisket beef ribs. Brisket jerky tenderloin turkey chuck. Porchetta boudin tail leberkas shankle meatloaf. Strip steak bacon turkey ham hock, porchetta kevin venison ribeye drumstick alcatra pancetta. Venison beef ribs pork, tail cupim t-bone strip steak porchetta brisket pork chop sirloin.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="education2" class="education">
+                  <div class="educationDate">
+                    <div class="dateBox">JANUARY 2009</br> - </br>MAY 2011</div>
+                  </div>
+                  <div class="educationName">
+                    <div class="dot"></div>
+                    <div class="collegeParagraph">
+                      <div class="collegeTitle">UTAH VALLEY UNIVERSITY</div>
+                      <div class="collegeDescription">
+                        Spicy jalapeno bacon ipsum dolor amet biltong beef cupim meatloaf tenderloin, bresaola sirloin fatback t-bone porchetta. Shank pastrami landjaeger filet mignon prosciutto shankle fatback turducken tri-tip kevin spare ribs sausage chuck bresaola. Leberkas shoulder meatloaf brisket beef ribs. Brisket jerky tenderloin turkey chuck. Porchetta boudin tail leberkas shankle meatloaf. Strip steak bacon turkey ham hock, porchetta kevin venison ribeye drumstick alcatra pancetta. Venison beef ribs pork, tail cupim t-bone strip steak porchetta brisket pork chop sirloin.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="educationTitle2" class="educationTitle">WORK EXPERIENCE</div>
+
+              <div id="myResumeWorkExperience">
+                <div id="work1" class="education">
+                  <div class="educationDate">
+                    <div class="dateBox">DECEMBER 2015</br> - </br>PRESENT</div>
+                  </div>
+                  <div class="educationName">
+                    <div class="dot"></div>
+                    <div class="collegeParagraph">
+                      <div class="collegeTitle">TORCH LMS</div>
+                      <div class="collegeDescription">
+                        Spicy jalapeno bacon ipsum dolor amet biltong beef cupim meatloaf tenderloin, bresaola sirloin fatback t-bone porchetta. Shank pastrami landjaeger filet mignon prosciutto shankle fatback turducken tri-tip kevin spare ribs sausage chuck bresaola. Leberkas shoulder meatloaf brisket beef ribs. Brisket jerky tenderloin turkey chuck. Porchetta boudin tail leberkas shankle meatloaf. Strip steak bacon turkey ham hock, porchetta kevin venison ribeye drumstick alcatra pancetta. Venison beef ribs pork, tail cupim t-bone strip steak porchetta brisket pork chop sirloin.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="work2" class="education">
+                  <div class="educationDate">
+                    <div class="dateBox">JANUARY 2015</br> - </br>DECEMBER 2015</div>
+                  </div>
+                  <div class="educationName">
+                    <div class="dot"></div>
+                    <div class="collegeParagraph">
+                      <div class="collegeTitle">SERVER PLUS</div>
+                      <div class="collegeDescription">
+                        Spicy jalapeno bacon ipsum dolor amet biltong beef cupim meatloaf tenderloin, bresaola sirloin fatback t-bone porchetta. Shank pastrami landjaeger filet mignon prosciutto shankle fatback turducken tri-tip kevin spare ribs sausage chuck bresaola. Leberkas shoulder meatloaf brisket beef ribs. Brisket jerky tenderloin turkey chuck. Porchetta boudin tail leberkas shankle meatloaf. Strip steak bacon turkey ham hock, porchetta kevin venison ribeye drumstick alcatra pancetta. Venison beef ribs pork, tail cupim t-bone strip steak porchetta brisket pork chop sirloin.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <div class="mySkillsContainer">
+              <div class="mySkillsSection">
+                <div id="mySkillsTitle">MY SKILLS</div>
+
+                <div id="mySkillsSkills1">
+                  <div class="eachSkill">
+                    <i id="skillIcons" class="devicon-angularjs-plain"></i>
+                    <p class="skillNames">ANGULAR JS</p>
+                  </div>
+                  <div class="eachSkill">
+                    <i id="skillIcons" class="devicon-javascript-plain"></i>
+                    <p class="skillNames">JAVASCRIPT</p>
+                  </div>
+                  <div class="eachSkill">
+                    <i id="skillIcons" class="devicon-nodejs-plain"></i>
+                    <p class="skillNames">NODE JS</p>
+                  </div>
+                  <div class="eachSkill">
+                    <i id="skillIcons" class="devicon-mongodb-plain"></i>
+                    <p class="skillNames">MONGO DB</p>
+                  </div>
+                  <div class="eachSkill">
+                    <i id="skillIcons" class="devicon-postgresql-plain"></i>
+                    <p class="skillNames">POSTGRESQL</p>
+                  </div>
+
+                </div>
+
+                <div id="mySkillsSkills2">
+                  <div class="eachSkill">
+                    <i id="skillIcons" class="devicon-jquery-plain"></i>
+                    <p class="skillNames">JQUERY</p>
+                  </div>
+                  <div class="eachSkill">
+                    <i id="skillIcons" class="devicon-html5-plain"></i>
+                    <p class="skillNames">HTML5</p>
+                  </div>
+                  <div class="eachSkill">
+                    <i id="skillIcons" class="devicon-css3-plain"></i>
+                    <p class="skillNames">CSS3</p>
+                  </div>
+                  <div class="eachSkill">
+                    <i id="skillIcons" class="devicon-github-plain"></i>
+                    <p class="skillNames">GITHUB</p>
+                  </div>
+                  <div class="eachSkill">
+                    <i id="skillIcons" class="devicon-git-plain"></i>
+                    <p class="skillNames">GIT</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="endorsementsContainer">
+                <div class="endorsementsSection">
+                  <div id="endorsementsTitle">ENDORSEMENTS</div>
+                  <div class="endorsements">
+                    <div class="endorsementComment">
+                      <img src="./assets/jakeWhite.jpg" class="endorsePicture" alt="">
+                      <p class="aboutEndorser">
+                        Jake White,</br> CEO at Torch LMS
+                      </p>
+                      <div class="endorsementendorsement">
+                        <i class="material-icons">format_quote</i>
+                          Max is exceptional to work with, and gets solid results. He is a team player, he is punctual, and always willing to help out with anything that needs to be done. Max is always pushing himself to learn more and develop himself professionally.
+                        <i class="material-icons">format_quote</i>
+                      </div>
+                    </div>
+                    <div class="endorsementComment">
+                      <img src="./assets/jaronMathis.jpg" class="endorsePicture" alt="">
+                      <p class="aboutEndorser">
+                        Jaron Mathis,</br> COO at Torch LMS
+                      </p>
+                      <div class="endorsementendorsement">
+                        <i class="material-icons">format_quote</i>
+                        [Max] has shown the ability to wear many different hats, and always runs to the fire to figure out how he can add value for our clients. Specifically, Max has become an indispensable resource through his product knowledge and testing ability on our system.
+                        <i class="material-icons">format_quote</i>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="portfolioContainer">
+              <div class="portfolioSection">
+                <div class="portfolioTitle">PORTFOLIO</div>
+                <div class="portfolioBody">
+                  <a class="portfolioItem" href="#"><img src="" alt=""></a>
+                  <a class="portfolioItem" href="#"><img src="" alt=""></a>
+                  <a class="portfolioItem" href="#"><img src="" alt=""></a>
+                  <a class="portfolioItem" href="#"><img src="" alt=""></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contactContainer">
+              <div class="contactSection">
+                <div class="contactTitle">CONTACT</div>
+                <div class="contactBody">
+                  <div class="contactInput">
+                    <input class="contactForm" type="text" placeholder="Name" name="" value="">
+                    <input class="contactForm" type="text" placeholder="Email" name="" value="">
+                    <textarea class="contactArea" placeholder="Message" name="name" rows="8" cols="80"></textarea>
+                    <div class="sendButton"><i class="material-icons">check_circle</i>SEND</div>
+                  </div>
+                  <div class="contactMe">
+                    <div class="myInformation"><i class="material-icons">home</i>211 North 1880 East,</br> Spanish Fork, Utah</div>
+                    <div class="myInformation"><i class="material-icons">phone</i>801 234 0170</div>
+                    <div class="myInformation"><i class="material-icons">email</i>mjacobson7@gmail.com</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <footer class="footer">
+              <div class="reserved">Max Jacobson © 2016</div>
+            </footer>
+    </div>
+
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js" charset="utf-8"></script>
+  <script src="./mainController.js" charset="utf-8"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script src="./jquery.js" charset="utf-8"></script>
+</html>
