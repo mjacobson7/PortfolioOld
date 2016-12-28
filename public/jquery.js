@@ -11,11 +11,9 @@ angular.module('myPortfolio')
       	   var navHeight = $( window ).height() + 30;
       			 if ($(window).scrollTop() > navHeight) {
       				 $('.navBar').addClass('fixed');
-               $('.aboutMeContainer').addClass('padding');
       			 }
       			 else {
       				 $('.navBar').removeClass('fixed');
-               $('.aboutMeContainer').removeClass('padding');
 
       			 }
       		});
@@ -184,7 +182,45 @@ angular.module('myPortfolio')
             $(this).css('border', '2px solid #ffe89c').css('background', 'transparent');
           })
 
-          
+          $('a[href^="#"]').on('click',function (e) {
+	          e.preventDefault();
+	          var target = this.hash;
+	          var $target = $(target);
+      	    $('html, body').stop().animate({
+      	        'scrollTop': $target.offset().top - 77
+      	    }, 900, 'swing', function () {
+      	        window.location.hash = target;
+      	    });
+
+      	});
+
+            var topRange    = 200,  // measure from the top of the viewport to X pixels down
+              edgeMargin    = 20,   // margin above the top or margin from the end of the page
+              animationTime = 1200, // time in milliseconds
+              contentTop    = [];
+
+
+          // Set up content an array of locations
+          $('.navBar ul li').find('a').each(function(){
+           contentTop.push( $( $(this).attr('href') ).offset().top );
+          })
+
+          // adjust side menu
+          $(window).scroll(function(){
+           var winTop = $(window).scrollTop(),
+               bodyHt = $(document).height(),
+               vpHt   = $(window).height() + edgeMargin;  // viewport height + margin
+           $.each( contentTop, function(i,loc){
+            if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
+             $('.navBar ul li a')
+              .removeClass('selected')
+              .eq(i).addClass('selected');
+            }
+           })
+          })
+
+
+
 
 
 

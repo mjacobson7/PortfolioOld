@@ -14,11 +14,11 @@
   </head>
   <body jquery-directive ng-controller="mainController">
 
-    <div class="homeContainer">
+    <div id="home" class="homeContainer">
         <div class="backgroundImage">
           <div class="homeLogo">
             <div class="homeName">MAX JACOBSON</div>
-            <div class="homeTagline">DEVELOPER</div>
+            <div class="homeTagline">WEB DEVELOPER</div>
           </div>
           <div class="homeCarousel">
             <p id="{{test1}}" class="homeDescription1">CREATING PROFESSIONAL</br> DESIGNS</p>
@@ -27,19 +27,21 @@
           </div>
         </div>
 
+        <div class="nav-wrapper">
           <div class="navBar">
             <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">MY RESUME</a></li>
-              <li><a href="#">MY SKILLS</a></li>
-              <li><a href="#">TESTIMONIALS</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">CONTACTS</a></li>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#myresume">MY RESUME</a></li>
+              <li><a href="#myskills">MY SKILLS</a></li>
+              <li><a href="#endorsements">ENDORSEMENTS</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
+        </div>
 
-          <div class="aboutMeContainer">
+          <div id="about" class="aboutMeContainer">
             <div class="aboutMeSection">
               <div id="aboutMeTitle">ABOUT ME</div>
               <div class="aboutMeMain">
@@ -65,7 +67,7 @@
             </div>
           </div>
 
-          <div class="myResumeContainer">
+          <div id="myresume" class="myResumeContainer">
             <div class="myResumeSection">
               <div id="myResumeTitle" class="myResumeTitle">MY RESUME</div>
 
@@ -137,7 +139,7 @@
               </div>
             </div>
 
-            <div class="mySkillsContainer">
+            <div id="myskills" class="mySkillsContainer">
               <div class="mySkillsSection">
                 <div id="mySkillsTitle">MY SKILLS</div>
 
@@ -190,7 +192,7 @@
               </div>
             </div>
 
-            <div class="endorsementsContainer">
+            <div id="endorsements" class="endorsementsContainer">
                 <div class="endorsementsSection">
                   <div id="endorsementsTitle">ENDORSEMENTS</div>
                   <div class="endorsements">
@@ -220,7 +222,7 @@
               </div>
             </div>
 
-            <div class="portfolioContainer">
+            <div id="portfolio" class="portfolioContainer">
               <div class="portfolioSection">
                 <div class="portfolioTitle">PORTFOLIO</div>
                 <div class="portfolioBody">
@@ -232,7 +234,7 @@
               </div>
             </div>
 
-            <div class="contactContainer">
+            <div id="contact" class="contactContainer">
               <div class="contactSection">
                 <div class="contactTitle">CONTACT</div>
                 <div class="contactBody">
