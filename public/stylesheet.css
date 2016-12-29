@@ -229,11 +229,19 @@ li h5 span {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
+  outline: none;
 }
 
 .downloadResume:hover {
   background-color: #000;
   transition: 0.3s;
+  text-decoration: none;
+  outline: none;
+}
+
+.downloadResume:focus {
+  text-decoration: none;
 }
 
 .downloadResume:hover p {
@@ -476,7 +484,7 @@ li h5 span {
   color: #fff;
   border-left: 8px solid #B8D4DB;
   padding-left: 20px;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 
 .endorsements {
@@ -493,6 +501,7 @@ li h5 span {
   align-items: center;
   flex-wrap: wrap;
   /*justify-content: center;*/
+  visibility: hidden;
 }
 
 .endorsePicture {
@@ -523,6 +532,10 @@ li h5 span {
   padding-left: 5px;
   padding-right: 5px;
   margin-top: 5px;
+}
+
+#portfolio {
+  visibility: hidden;
 }
 
 .portfolioContainer {
@@ -564,6 +577,11 @@ li h5 span {
   border: 1px solid pink;
 }
 
+.portfolioItem img {
+  height: 100%;
+  width:  100%; 
+}
+
 .contactContainer {
   background: linear-gradient(
                      rgba(53,164,157, .5),
@@ -587,7 +605,7 @@ li h5 span {
   flex-direction: column;
 }
 
-.contactTitle {
+#contactTitle {
   margin-top: 75px;
   width: 100%;
   height: 100px;
@@ -596,6 +614,7 @@ li h5 span {
   color: #fff;
   border-left: 8px solid #B8D4DB;
   padding-left: 20px;
+  visibility: hidden;
 }
 
 .contactBody {
@@ -607,11 +626,12 @@ li h5 span {
   margin-top: 50px;
 }
 
-.contactInput {
+#contactInput {
   height: 100%;
   width: 850px;
   display: flex;
   flex-direction: column;
+  visibility: hidden;
 }
 
 .contactForm {
@@ -669,7 +689,7 @@ li h5 span {
   cursor: pointer;
 }
 
-.contactMe {
+#contactMe {
   background-color: rgba(63,63,63,0.5);
   height: 300px;
   width: 277px;
@@ -677,6 +697,7 @@ li h5 span {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
+  visibility: hidden;
 }
 
 .myInformation {

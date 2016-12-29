@@ -164,7 +164,87 @@ angular.module('myPortfolio')
             });
           });
 
-          $('.parallax').parallax();
+          $(window).scroll(function() {
+            $('#endorsement1').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+              if (imagePos < topOfWindow+600) {
+                $(this).addClass("slideExpandUp");
+              }
+            });
+          });
+
+          $(window).scroll(function() {
+            $('#endorsement2').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+              if (imagePos < topOfWindow+600) {
+                $(this).addClass("slideExpandUp");
+              }
+            });
+          });
+
+          $(window).scroll(function() {
+            $('#endorsementsTitle').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+              if (imagePos < topOfWindow+600) {
+                $(this).addClass("fadeIn");
+              }
+            });
+          });
+
+          $(window).scroll(function() {
+            $('#portfolio').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+              if (imagePos < topOfWindow+600) {
+                $(this).addClass("fadeIn");
+              }
+            });
+          });
+
+          $(window).scroll(function() {
+            $('#contactInput').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+              if (imagePos < topOfWindow+600) {
+                $(this).addClass("slideRight");
+              }
+            });
+          });
+
+
+          $(window).scroll(function() {
+            $('#contactMe').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+              if (imagePos < topOfWindow+600) {
+                $(this).addClass("slideLeft");
+              }
+            });
+          });
+
+          $(window).scroll(function() {
+            $('#contactTitle').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+              if (imagePos < topOfWindow+600) {
+                $(this).addClass("fadeIn");
+              }
+            });
+          });
+
+
+
+
 
           $('.contactForm').focus(function() {
             $(this).css('border', '2px solid #35A49D').css('background-color', 'rgba(255, 255, 255, 0.6)').css('transition', '0.5s');
