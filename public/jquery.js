@@ -30,13 +30,12 @@ angular.module('myPortfolio')
         	});
 
 
-
           $(window).scroll(function() {
             $('#profilePicture').each(function(){
             var imagePos = $(this).offset().top;
 
             var topOfWindow = $(window).scrollTop();
-              if (imagePos < topOfWindow+600) {
+              if (imagePos < topOfWindow+630) {
                 $(this).addClass("slideRight");
               }
             });
@@ -47,7 +46,7 @@ angular.module('myPortfolio')
             var imagePos = $(this).offset().top;
 
             var topOfWindow = $(window).scrollTop();
-              if (imagePos < topOfWindow+600) {
+              if (imagePos < topOfWindow+610) {
                 $(this).addClass("slideLeft");
               }
             });
