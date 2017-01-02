@@ -1,9 +1,9 @@
 html {
-  height: 780vh;
+  height: 100%;
 }
 
 .homeContainer {
-  height: 100vh;
+  height: 100%;
 
 }
 
@@ -44,52 +44,6 @@ html {
   font-size: 45px;
   color: #fff;
   text-align: center;
-}
-
-.homeCarousel {
-  height: 20vh;
-  width: 40vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.homeCarousel p {
-  font-family: 'Lato', sans-serif;
-  font-weight: bolder;
-  font-size: 40px;
-  color: #ffe89c;
-  border-top: 4px solid #ffe89c;
-  border-bottom: 4px solid #ffe89c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  word-wrap: break-word;
-}
-
-.homeDescription1 {
-  opacity: 0.0;
-  transition: opacity 1s ease-in-out;
-}
-
-#test {
-  opacity: 1;
-}
-
-#remove {
-  opacity: 0;
-}
-
-.homeDescription2 {
-  opacity: 0.0;
-  transition: opacity 1s ease-in-out;
-}
-
-.homeDescription3 {
-  opacity: 0.0;
-  transition: opacity 1s ease-in-out;
 }
 
 .navBar {
@@ -579,7 +533,7 @@ li h5 span {
 
 .portfolioItem img {
   height: 100%;
-  width:  100%; 
+  width:  100%;
 }
 
 .contactContainer {
