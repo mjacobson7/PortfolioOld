@@ -512,7 +512,7 @@ li h5 span {
 
 .portfolioSection {
   margin-top: 75px;
-  width: 1170px;
+  width: 100%;
   height: auto;
 }
 
@@ -539,7 +539,6 @@ li h5 span {
 .portfolioItem {
   height: 221px;
   width: 389px;
-  border: 1px solid pink;
 }
 
 .portfolioItem img {
@@ -1070,6 +1069,169 @@ li h5 span {
     color: #fff;
     font-size: 18px;
   }
+
+  #mySkillsTitle {
+    font-size: 40px;
+  }
+
+  .endorsementsContainer {
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    width: 100%;
+    background: linear-gradient(
+                       rgba(53,164,157, .8),
+                       rgba(53,164,157, .8)),
+                       url("./assets/city9.jpg") no-repeat center center fixed;
+  }
+
+  .endorsementsSection {
+    height: 100%;
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  #endorsementsTitle {
+    width: 100%;
+    height: 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    border-left: 8px solid #B8D4DB;
+    padding-left: 20px;
+    visibility: hidden;
+  }
+
+  .endorsements {
+    width: 100%;
+    height: 1500px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .endorsementComment {
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    visibility: hidden;
+  }
+
+  .endorsePicture {
+    height: 125px;
+    width: 125px;
+    border: 6px solid #9AD1CE;
+  }
+
+  .aboutEndorser {
+    height: 55px;
+    width: 200px;
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10px;
+    color: #fff;
+  }
+
+  .endorsementendorsement {
+    font-weight: bold;
+    font-size: 18px;
+    height: 190px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 0px;
+  }
+
+  .portfolioItem {
+    margin: 2px 0px;
+  }
+
+  .portfolioSection {
+    width: 90%;
+  }
+
+  .portfolioTitle {
+    font-size: 40px;
+  }
+
+  .contactContainer {
+    height: 950px;
+  }
+
+  .contactSection {
+    width: 90%;
+  }
+
+  #contactTitle {
+    font-size: 40px;
+  }
+
+  .contactBody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+    margin-top: 50px;
+  }
+
+  #contactInput {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+  }
+
+  .contactForm {
+    width: 100%;
+    height: 42px;
+    text-decoration: none;
+    border: 2px solid #ffe89c;
+    background: transparent;
+    outline: none;
+    margin-top: 10px;
+  }
+
+  .contactArea {
+    max-width: 850px;
+    max-height: 120px;
+  }
+
+  #contactMe {
+    background-color: rgba(63,63,63,0.5);
+    height: 300px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+  }
+
+  .myInformation {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .myInformation i {
+    color: #ffe89c;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+
+
 
 
 
