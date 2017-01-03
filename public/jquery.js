@@ -7,8 +7,17 @@ angular.module('myPortfolio')
 
         $(this).scrollTop(0);
 
+        // $('#select-anchor').change( function () {
+        //   var targetPosition = $($(this).val()).offset().top;
+        //   $('html,body').animate({ scrollTop: targetPosition}, 'slow');
+
         $(window).bind('scroll', function() {
-      	   var navHeight = $( window ).height() + 30;
+          if($(window).width() >= 768 && $(window).width() <= 1024) {
+            var navHeight = $( window ).height() + 65;
+          } else {
+            var navHeight = $( window ).height() + 30;
+          }
+
       			 if ($(window).scrollTop() > navHeight) {
       				 $('.navBar').addClass('fixed');
       			 }
@@ -35,7 +44,7 @@ angular.module('myPortfolio')
             var imagePos = $(this).offset().top;
 
             var topOfWindow = $(window).scrollTop();
-              if (imagePos < topOfWindow+630) {
+              if (imagePos < topOfWindow+600) {
                 $(this).addClass("slideRight");
               }
             });
@@ -46,7 +55,7 @@ angular.module('myPortfolio')
             var imagePos = $(this).offset().top;
 
             var topOfWindow = $(window).scrollTop();
-              if (imagePos < topOfWindow+610) {
+              if (imagePos < topOfWindow+600) {
                 $(this).addClass("slideLeft");
               }
             });

@@ -1,10 +1,12 @@
 html {
   height: 100%;
+  width: 100%;
 }
 
 .homeContainer {
   height: 100%;
-
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .backgroundImage {
@@ -57,6 +59,11 @@ html {
 
 .nav-wrapper {
   height: 78px;
+  background-color: #35A49D;
+}
+
+.mobileNav {
+  display: none;
 }
 
 .selected {
@@ -105,6 +112,7 @@ html {
 .aboutMeContainer {
   background-color: #35A49D;
   height: 700px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -323,6 +331,7 @@ li h5 span {
 
 .collegeDescription {
   margin-top: 15px;
+  width: 80%;
 }
 
 
@@ -479,7 +488,7 @@ li h5 span {
 .endorsementendorsement {
   font-weight: bold;
   font-size: 18px;
-  height: 160px;
+  height: 170px;
   width: 90%;
   border: 2px solid #FFE89C;
   color: #fff;
@@ -520,6 +529,8 @@ li h5 span {
   width: 100%;
   height: auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 75px;
   margin-top: 50px;
@@ -682,3 +693,335 @@ li h5 span {
   color: #fff;
   font-size: 20px;
 }
+
+
+/*TABLETS*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  .aboutMeSection {
+    width: 950px;
+  }
+
+  .aboutMeMain {
+    width: 920px;
+  }
+
+  #paragraphDetails {
+    height: 100px;
+    margin-top: 50px;
+  }
+
+  #paragraphDetails ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .myResumeSection {
+    width: 950px;
+  }
+
+  .educationName {
+    width: 920px;
+  }
+
+  .mySkillsSection {
+    width: 950px;
+  }
+
+  .endorsementsSection {
+    width: 950px;
+  }
+
+  .portfolioSection {
+    width: 950px;
+  }
+
+  .portfolioBody {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactSection {
+    width: 950px;
+  }
+
+  #contactInput {
+    height: 100%;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+  }
+
+  .contactForm {
+    width: 550px;
+    height: 42px;
+    text-decoration: none;
+    border: 2px solid #ffe89c;
+    background: transparent;
+    outline: none;
+    margin-top: 10px;
+  }
+
+  .contactArea {
+    background: transparent;
+    border: 2px solid #ffe89c;
+    max-width: 850px;
+    max-height: 120px;
+    text-decoration: none;
+    outline: none;
+    margin-top: 10px;
+    resize: none;
+  }
+
+
+
+
+
+}
+/*END TABLET RESPONSIVE DESIGN*/
+
+@media only screen and (max-device-width : 480px) {
+
+  .backgroundImage {
+    height: 60vh;
+    background: linear-gradient(
+                       rgba(53,164,157, .4),
+                       rgba(53,164,157, .4)),
+                       url("./assets/laptop.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .homeLogo {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  .homeName {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .homeTagline {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .nav-wrapper {
+    display: none;
+  }
+
+  .mobileNav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: #3E3E3E;
+  }
+
+  .mobileNav select {
+    height: 40px;
+    width: 90%;
+    border: 1px solid #3E3E3E;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  .aboutMeContainer {
+    height: 1725px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .aboutMeSection {
+    width: 90%;
+    height: 90%;
+    margin-top: 100px;
+  }
+
+  #aboutMeTitle {
+    width: 1170px;
+    height: 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    border-left: 8px solid #9AD1CE;
+    padding-left: 20px;
+    visibility: hidden;
+  }
+
+  .aboutMeMain {
+    width: 800px;
+    height: 417px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #profilePicture {
+    border: 15px solid #9AD1CE;
+    width: 370px;
+    height: 550px;
+    visibility: hidden;
+  }
+
+  #profileDescription {
+    height: 717px;
+    width: 370px;
+    margin-left: 0px;
+    margin-top: 20px;
+    color: #fff;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profileParagraph {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    height: 1000px;
+  }
+
+  #paragraphDetails {
+    margin-top: 50px;
+    height: 500px;
+  }
+
+  #paragraphDetails ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  li h5 {
+    font-size: 20px;
+  }
+
+  li h5 span {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .downloadResume p {
+    width: 296px;
+    height: 60px;
+    border: 1px solid #FFE89C;
+    margin-top: 57px;
+    background-color: #FFE89C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .myResumeContainer {
+    height: 2250px;
+  }
+
+  .myResumeSection {
+    width: 90%;
+  }
+
+  .myResumeTitle {
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+  }
+
+  #myResumeWorkExperience {
+    width: 100%;
+    height: 515px;
+  }
+
+  .myResumeEducation {
+    width: 100%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .educationTitle {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 10px;
+  }
+
+  .education {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .educationDate {
+    width: 100%;
+    margin-top: 50px;
+    padding-right: 0px;
+    border-right: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .educationName {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    }
+
+  .dateBox {
+    height: 54px;
+    width: 360px;
+    background-color: #FFE89C;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .collegeParagraph {
+    width: 100%;
+    height: 280px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+}
+/*END PHONE RESPONSIVE DESIGN*/
