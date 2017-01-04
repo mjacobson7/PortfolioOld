@@ -162,7 +162,7 @@ angular.module('myPortfolio')
 
             var topOfWindow = $(window).scrollTop();
               if (imagePos < topOfWindow+600) {
-                $(this).addClass("hatch");
+                $(this).addClass("fadeIn");
               }
             });
           });
@@ -173,7 +173,7 @@ angular.module('myPortfolio')
 
             var topOfWindow = $(window).scrollTop();
               if (imagePos < topOfWindow+600) {
-                $(this).addClass("hatch");
+                $(this).addClass("fadeIn");
               }
             });
           });
@@ -183,8 +183,8 @@ angular.module('myPortfolio')
             var imagePos = $(this).offset().top;
 
             var topOfWindow = $(window).scrollTop();
-              if (imagePos < topOfWindow+600) {
-                $(this).addClass("slideExpandUp");
+              if (imagePos < topOfWindow+500) {
+                $(this).addClass("slideLeft");
               }
             });
           });
@@ -194,8 +194,8 @@ angular.module('myPortfolio')
             var imagePos = $(this).offset().top;
 
             var topOfWindow = $(window).scrollTop();
-              if (imagePos < topOfWindow+600) {
-                $(this).addClass("slideExpandUp");
+              if (imagePos < topOfWindow+500) {
+                $(this).addClass("slideRight");
               }
             });
           });

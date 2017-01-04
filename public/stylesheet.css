@@ -37,7 +37,6 @@ html {
   font-family: 'Lato', sans-serif;
   font-size: 100px;
   color: #fff;
-  margin-bottom: -30px;
   text-align: center;
 }
 
@@ -268,6 +267,7 @@ li h5 span {
   font-size: 30px;
   font-weight: bolder;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .education {
@@ -487,7 +487,7 @@ li h5 span {
 .endorsementendorsement {
   font-weight: bold;
   font-size: 18px;
-  height: 170px;
+  height: 140px;
   width: 90%;
   border: 2px solid #FFE89C;
   color: #fff;
@@ -592,7 +592,7 @@ li h5 span {
 
 #contactInput {
   height: 100%;
-  width: 850px;
+  width: 856px;
   display: flex;
   flex-direction: column;
   visibility: hidden;
@@ -615,8 +615,8 @@ li h5 span {
   max-height: 120px;
   text-decoration: none;
   outline: none;
-  margin-top: 10px;
   resize: none;
+  margin-top: 10px;
 }
 
 .contactForm::-webkit-input-placeholder {
@@ -744,17 +744,18 @@ li h5 span {
   .profileParagraph {
     font-family: 'Raleway', sans-serif;
     font-size: 19px;
-    height: 300px;
+    height: 200px;
   }
 
   #paragraphDetails {
     height: 100px;
+    display: flex;
   }
 
   #paragraphDetails ul {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -815,6 +816,10 @@ li h5 span {
     visibility: hidden;
   }
 
+  .endorsementendorsement {
+    height: 90px;
+  }
+
   .portfolioSection {
     width: 90%;
   }
@@ -835,11 +840,11 @@ li h5 span {
   }
 
   .contactForm {
-    width: 100%;
+    width: 640px;
   }
 
   .contactArea {
-    max-width: 100%;
+    max-width: 651px;
   }
 
   .sendButton {
@@ -890,24 +895,6 @@ li h5 span {
     margin-left: 5px;
     margin-right: 0px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 /*END TABLET RESPONSIVE DESIGN*/
@@ -975,7 +962,7 @@ li h5 span {
   }
 
   .aboutMeContainer {
-    height: 1725px;
+    height: 1550px;
     width: 100%;
     align-items: flex-start;
   }
@@ -987,7 +974,7 @@ li h5 span {
   }
 
   #aboutMeTitle {
-    width: 1170px;
+    width: 100%;
     height: 100px;
     font-family: 'Lato', sans-serif;
     font-size: 40px;
@@ -998,7 +985,7 @@ li h5 span {
   }
 
   .aboutMeMain {
-    width: 800px;
+    width: 100%;
     height: 417px;
     margin-top: 40px;
     display: flex;
@@ -1007,8 +994,8 @@ li h5 span {
 
   #profilePicture {
     border: 15px solid #9AD1CE;
-    width: 370px;
-    height: 550px;
+    width: 340px;
+    height: 540px;
     visibility: hidden;
   }
 
@@ -1043,6 +1030,7 @@ li h5 span {
 
   li h5 {
     font-size: 20px;
+    margin-bottom: 10px;
   }
 
   li h5 span {
@@ -1076,6 +1064,7 @@ li h5 span {
     width: 100%;
     height: 100px;
     font-size: 40px;
+    margin-bottom: 10px;
   }
 
   #myResumeWorkExperience {
@@ -1265,7 +1254,7 @@ li h5 span {
   .endorsementendorsement {
     font-weight: bold;
     font-size: 18px;
-    height: 190px;
+    height: 160px;
     width: 100%;
     padding-left: 5px;
     padding-right: 5px;
@@ -1307,14 +1296,14 @@ li h5 span {
 
   #contactInput {
     height: 350px;
-    width: 100%;
+    width: 378px;
     display: flex;
     flex-direction: column;
     visibility: hidden;
   }
 
   .contactForm {
-    width: 100%;
+    width: 372px;
     height: 42px;
     text-decoration: none;
     border: 2px solid #ffe89c;
@@ -1324,7 +1313,7 @@ li h5 span {
   }
 
   .contactArea {
-    max-width: 850px;
+    max-width: 378px;
     max-height: 120px;
   }
 
