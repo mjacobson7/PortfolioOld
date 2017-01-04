@@ -791,7 +791,7 @@ li h5 span {
 @media only screen and (max-device-width : 480px) {
 
   .backgroundImage {
-    height: 60vh;
+    height: 440px;
     background: linear-gradient(
                        rgba(53,164,157, .4),
                        rgba(53,164,157, .4)),
