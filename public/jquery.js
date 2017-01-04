@@ -16,6 +16,10 @@ angular.module('myPortfolio')
             var navHeight = $( window ).height() + -225;
           } else if($(window).width() <= 1024 && $(window).height() <= 768) {
             var navHeight = $( window ).height() + 33;
+          } else if($(window).width() <= 1024 && $(window).height() <= 1366) {
+            var navHeight = $( window ).height() + -568;
+          } else if($(window).width() <= 1366 && $(window).height() <= 1024) {
+            var navHeight = $( window ).height() + 52;
           } else {
             var navHeight = $( window ).height() + 30;
           }
