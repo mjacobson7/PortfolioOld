@@ -463,7 +463,6 @@ li h5 span {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  /*justify-content: center;*/
   visibility: hidden;
 }
 
@@ -539,6 +538,7 @@ li h5 span {
 .portfolioItem {
   height: 221px;
   width: 389px;
+  margin: 5px;
 }
 
 .portfolioItem img {
@@ -709,65 +709,12 @@ li h5 span {
     font-size: 90px;
   }
 
-  .navBar {
-    height: 78px;
-    width: 100%;
-    background-color: #3E3E3E;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .nav-wrapper {
-    height: 78px;
-    background-color: #35A49D;
-  }
-
-  .selected {
-    color: #ffe89c;
-    transition: 0.5s;
-    border: 1px solid #ffe89c;
-  }
-
-  .navBar ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0px;
-  }
-
-  .navBar ul li {
-    padding: 10px;
-    border: 1px solid #3E3E3E;
-  }
-
-  .navBar ul li a:hover {
-    color: #ffe89c;
-    transition: 0.5s;
-  }
-
-
   .navBar ul li a {
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-weight:100;
-    font-size: 17px;
-    text-decoration: none;
-    padding: 10px;
-  }
-
-  .fixed {
-    position: fixed;
-  	top: 0;
-  	height: 78px;
-  	z-index: 1;
-    border-bottom: 2px solid #ffe89c;
-    box-shadow: 0px 1px 10px #3E3E3E;
+    font-size: 12px;
   }
 
   .aboutMeContainer {
-    height: 900px;
+    height: 750px;
   }
 
   .aboutMeSection {
@@ -812,58 +759,148 @@ li h5 span {
     flex-wrap: wrap;
   }
 
-  li h5 span {
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    margin-right: 20px;
+  .myResumeSection {
+    width: 90%;
+  }
+
+  .myResumeEducation {
+    width: 100%;
+  }
+
+  #myResumeWorkExperience {
+    width: 100%;
+  }
+
+  .collegeParagraph {
+    width: 100%;
+    height: 200px;
+  }
+
+  .collegeDescription {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .mySkillsSection {
+    width: 90%;
 
   }
 
-  .downloadResume {
-    width: 296px;
-    height: 60px;
-    margin-top: 57px;
-    background-color: #FFE89C;
+  .endorsementsContainer {
+    height: 930px;
+  }
+
+  .endorsementsSection {
+    width: 90%;
+  }
+
+  #endorsementsTitle {
+    width: 100%;
+  }
+
+  .endorsements {
+    width: 100%;
+    height: 700px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .endorsementComment {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    visibility: hidden;
+  }
+
+  .portfolioSection {
+    width: 90%;
+  }
+
+  .portfolioItem {
+    height: 211px;
+    width: 330px;
+    margin: 5px;
+  }
+
+  .contactSection {
+    width: 90%;
+  }
+
+  #contactInput {
+    height: 90%;
+    width: 70%;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+
+  .contactArea {
+    max-width: 100%;
+  }
+
+  .sendButton {
+    width: 146px;
+    height: 62px;
+    background-color: #ffe89c;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 25px;
+    align-self: flex-end;
+  }
+
+  .sendButton:hover {
+    background-color: #3E3E3E;
+    color: #fff;
+    transition: 0.4s;
     cursor: pointer;
-    text-decoration: none;
-    outline: none;
   }
 
-  .downloadResume:hover {
-    background-color: #000;
-    transition: 0.3s;
-    text-decoration: none;
-    outline: none;
+  #contactMe {
+    background-color: rgba(63,63,63,0.5);
+    height: 310px;
+    width: 195px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
   }
 
-  .downloadResume:focus {
-    text-decoration: none;
-  }
-
-  .downloadResume:hover p {
+  .myInformation {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     color: #fff;
-    transition: 0.3s;
+    font-size: 16px;
+    margin-left: 10px;
   }
 
-  .downloadResume:hover i {
-    color: #fff;
-    transition: 0.3s;
+  .myInformation i {
+    color: #ffe89c;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 0px;
   }
 
-  .downloadResume p {
-    color: #000;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    margin: 0px;
-  }
 
-  .downloadResume i {
-    color: #000;
-    margin: 0px 15px 0px 0px;
-  }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1236,7 +1273,7 @@ li h5 span {
   }
 
   .portfolioItem {
-    margin: 2px 0px;
+    margin: 5px;
   }
 
   .portfolioSection {

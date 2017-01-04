@@ -12,8 +12,10 @@ angular.module('myPortfolio')
         //   $('html,body').animate({ scrollTop: targetPosition}, 'slow');
 
         $(window).bind('scroll', function() {
-          if($(window).width() >= 768 && $(window).width() <= 1024) {
-            var navHeight = $( window ).height() + 65;
+          if($(window).width() <= 768 && $(window).height() <= 1024) {
+            var navHeight = $( window ).height() + -225;
+          } else if($(window).width() <= 1024 && $(window).height() <= 768) {
+            var navHeight = $( window ).height() + 33;
           } else {
             var navHeight = $( window ).height() + 30;
           }
