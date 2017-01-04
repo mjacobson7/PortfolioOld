@@ -697,89 +697,176 @@ li h5 span {
 /*TABLETS*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
+  .backgroundImage {
+    height: 800px;
+  }
+
+  .homeLogo {
+    width: 100%;
+  }
+
+  .homeName {
+    font-size: 90px;
+  }
+
+  .navBar {
+    height: 78px;
+    width: 100%;
+    background-color: #3E3E3E;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav-wrapper {
+    height: 78px;
+    background-color: #35A49D;
+  }
+
+  .selected {
+    color: #ffe89c;
+    transition: 0.5s;
+    border: 1px solid #ffe89c;
+  }
+
+  .navBar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .navBar ul li {
+    padding: 10px;
+    border: 1px solid #3E3E3E;
+  }
+
+  .navBar ul li a:hover {
+    color: #ffe89c;
+    transition: 0.5s;
+  }
+
+
+  .navBar ul li a {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight:100;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .fixed {
+    position: fixed;
+  	top: 0;
+  	height: 78px;
+  	z-index: 1;
+    border-bottom: 2px solid #ffe89c;
+    box-shadow: 0px 1px 10px #3E3E3E;
+  }
+
+  .aboutMeContainer {
+    height: 900px;
+  }
+
   .aboutMeSection {
-    width: 950px;
+    width: 90%;
+    height: 700px;
   }
 
   .aboutMeMain {
-    width: 920px;
+    width: 100%;
+  }
+
+  #profilePicture {
+    border: 8px solid #9AD1CE;
+    width: 200px;
+    height: 317px;
+    visibility: hidden;
+  }
+
+  #profileDescription {
+    height: 850px;
+    width: 875px;
+    margin-left: 30px;
+    color: #fff;
+    visibility: hidden;
+  }
+
+  .profileParagraph {
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    height: 300px;
   }
 
   #paragraphDetails {
     height: 100px;
-    margin-top: 50px;
   }
 
   #paragraphDetails ul {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .myResumeSection {
-    width: 950px;
+  li h5 span {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 20px;
+
   }
 
-  .educationName {
-    width: 920px;
-  }
-
-  .mySkillsSection {
-    width: 950px;
-  }
-
-  .endorsementsSection {
-    width: 950px;
-  }
-
-  .portfolioSection {
-    width: 950px;
-  }
-
-  .portfolioBody {
-    height: auto;
+  .downloadResume {
+    width: 296px;
+    height: 60px;
+    margin-top: 57px;
+    background-color: #FFE89C;
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 75px;
-    margin-top: 50px;
-    align-items: center;
     justify-content: center;
-  }
-
-  .contactSection {
-    width: 950px;
-  }
-
-  #contactInput {
-    height: 100%;
-    width: 550px;
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-  }
-
-  .contactForm {
-    width: 550px;
-    height: 42px;
-    text-decoration: none;
-    border: 2px solid #ffe89c;
-    background: transparent;
-    outline: none;
-    margin-top: 10px;
-  }
-
-  .contactArea {
-    background: transparent;
-    border: 2px solid #ffe89c;
-    max-width: 850px;
-    max-height: 120px;
+    align-items: center;
+    cursor: pointer;
     text-decoration: none;
     outline: none;
-    margin-top: 10px;
-    resize: none;
   }
+
+  .downloadResume:hover {
+    background-color: #000;
+    transition: 0.3s;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .downloadResume:focus {
+    text-decoration: none;
+  }
+
+  .downloadResume:hover p {
+    color: #fff;
+    transition: 0.3s;
+  }
+
+  .downloadResume:hover i {
+    color: #fff;
+    transition: 0.3s;
+  }
+
+  .downloadResume p {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  .downloadResume i {
+    color: #000;
+    margin: 0px 15px 0px 0px;
+  }
+
+
+
 
 
 
