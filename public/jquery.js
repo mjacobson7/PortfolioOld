@@ -7,9 +7,10 @@ angular.module('myPortfolio')
 
         $(this).scrollTop(0);
 
-        // $('#select-anchor').change( function () {
-        //   var targetPosition = $($(this).val()).offset().top;
-        //   $('html,body').animate({ scrollTop: targetPosition}, 'slow');
+        $('#select-anchor').change( function () {
+           var targetPosition = $($(this).val()).offset().top;
+           $('html,body').animate({ scrollTop: targetPosition}, 'slow');
+       });
 
         $(window).bind('scroll', function() {
           if($(window).width() <= 768 && $(window).height() <= 1024) {
@@ -184,7 +185,7 @@ angular.module('myPortfolio')
 
             var topOfWindow = $(window).scrollTop();
               if (imagePos < topOfWindow+500) {
-                $(this).addClass("slideLeft");
+                $(this).addClass("slideRight");
               }
             });
           });
@@ -195,7 +196,7 @@ angular.module('myPortfolio')
 
             var topOfWindow = $(window).scrollTop();
               if (imagePos < topOfWindow+500) {
-                $(this).addClass("slideRight");
+                $(this).addClass("slideLeft");
               }
             });
           });
