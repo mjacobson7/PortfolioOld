@@ -2,15 +2,15 @@
 <html ng-app="myPortfolio">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
     <title>Max Jacobson Portfolio</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./stylesheet.css">
     <link rel="stylesheet" href="./animations.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100|Lato:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-      <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.3.0/sweetalert2.min.css">
   </head>
   <body jquery-directive ng-controller="mainController">
 
@@ -251,10 +251,10 @@
                 <div id="contactTitle">CONTACT</div>
                 <div class="contactBody">
                   <div id="contactInput">
-                    <input class="contactForm" type="text" placeholder="Name" name="" value="">
-                    <input class="contactForm" type="text" placeholder="Email" name="" value="">
-                    <textarea class="contactArea" placeholder="Message" name="name" rows="8" cols="80"></textarea>
-                    <div class="sendButton"><i class="material-icons">check_circle</i>SEND</div>
+                    <input class="contactForm" type="text" placeholder="Name" name="" value="" ng-model="user.name">
+                    <input class="contactForm" type="text" placeholder="Email" name="" value="" ng-model="user.email">
+                    <textarea class="contactArea" placeholder="Message" name="name" rows="8" cols="80" ng-model=user.message></textarea>
+                    <div class="sendButton" ng-click="sendMessage(user)"><i class="material-icons">check_circle</i>SEND</div>
                   </div>
                   <div id="contactMe">
                     <div class="myInformation"><i class="material-icons">home</i>211 North 1880 East,</br> Spanish Fork, Utah</div>
@@ -276,5 +276,6 @@
     <script src="./mainController.js" charset="utf-8"></script>
     <script src="./jquery.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/sweetalert2/6.3.0/sweetalert2.min.js" charset="utf-8"></script>
   </body>
 </html>
