@@ -22,7 +22,7 @@ angular.module('myPortfolio')
           } else if($(window).width() <= 1366 && $(window).height() <= 1024) {
             var navHeight = $( window ).height() + 52;
           } else {
-            var navHeight = $( window ).height() + 30;
+            var navHeight = $( window ).height() + 35;
           }
 
       			 if ($(window).scrollTop() > navHeight) {
@@ -136,6 +136,17 @@ angular.module('myPortfolio')
 
           $(window).scroll(function() {
             $('#work2').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+              if (imagePos < topOfWindow+600) {
+                $(this).addClass("fadeIn");
+              }
+            });
+          });
+
+          $(window).scroll(function() {
+            $('#work3').each(function(){
             var imagePos = $(this).offset().top;
 
             var topOfWindow = $(window).scrollTop();

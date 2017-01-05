@@ -1,4 +1,4 @@
-html {
+html body {
   height: 100%;
   width: 100%;
 }
@@ -35,6 +35,7 @@ html {
 
 .homeName {
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
   font-size: 100px;
   color: #fff;
   text-align: center;
@@ -66,8 +67,6 @@ html {
 }
 
 .selected {
-  color: #ffe89c;
-  transition: 0.5s;
   border: 1px solid #ffe89c;
 }
 
@@ -93,7 +92,7 @@ html {
 .navBar ul li a {
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-weight:100;
+  font-weight: 400;
   font-size: 17px;
   text-decoration: none;
   padding: 10px;
@@ -159,19 +158,25 @@ html {
 }
 
 .profileParagraph {
-  font-family: 'Raleway', sans-serif;
-  font-size: 19px;
-  height: 200px;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  line-height: 26px;
+  font-size: 20px;
+  height: 260px;
+  /*padding-bottom: 15px;*/
 }
 
 #paragraphDetails {
-  height: 100px;
+  height: 56px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
 #paragraphDetails ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -220,6 +225,9 @@ li h5 span {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .downloadResume i {
@@ -228,7 +236,7 @@ li h5 span {
 }
 
 .myResumeContainer {
-  height: 1300px;
+  height: 1450px;
   width: 100%;
   background-color: #F9F5EA;
   display: flex;
@@ -260,13 +268,13 @@ li h5 span {
 
 #myResumeWorkExperience {
   width: 1170px;
-  height: 515px;
+  height: 650px;
 }
 
 .educationTitle {
   font-size: 30px;
   font-weight: bolder;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -298,6 +306,7 @@ li h5 span {
 .dateBox {
   height: 94px;
   width: 160px;
+  padding: 20px;
   background-color: #FFE89C;
   font-family: 'Lato', sans-serif;
   display: flex;
@@ -311,7 +320,7 @@ li h5 span {
   width: 30px;
   border-radius: 50%;
   border: 3px solid #35A49D;
-  margin-left: -15px;
+  margin-left: -18px;
   background-color: #fff;
 }
 
@@ -326,10 +335,13 @@ li h5 span {
 
 .collegeTitle {
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
   font-size: 20px;
 }
 
 .collegeDescription {
+  color: #807d7c;
+  line-height: 20px;
   margin-top: 15px;
   width: 80%;
 }
@@ -348,6 +360,10 @@ li h5 span {
 }
 
 #work2 {
+  visibility: hidden;
+}
+
+#work3 {
   visibility: hidden;
 }
 
@@ -487,13 +503,16 @@ li h5 span {
 .endorsementendorsement {
   font-weight: bold;
   font-size: 18px;
-  height: 140px;
+  height: 120px;
   width: 90%;
   border: 2px solid #FFE89C;
   color: #fff;
   padding-left: 5px;
   padding-right: 5px;
   margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #portfolio {
@@ -695,7 +714,7 @@ li h5 span {
 
 
 /*TABLETS*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media (max-width : 1200px) {
 
   .backgroundImage {
     height: 800px;
@@ -901,7 +920,7 @@ li h5 span {
 }
 /*END TABLET RESPONSIVE DESIGN*/
 
-@media only screen and (max-device-width : 480px) {
+@media (max-width : 725px) {
 
   .backgroundImage {
     height: 440px;

@@ -2,12 +2,12 @@
 <html ng-app="myPortfolio">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Max Jacobson Portfolio</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./stylesheet.css">
     <link rel="stylesheet" href="./animations.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100|Lato:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100|Lato:100,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.3.0/sweetalert2.min.css">
@@ -21,7 +21,6 @@
             <div class="homeTagline">WEB DEVELOPER</div>
           </div>
         </div>
-
 
         <div class="nav-wrapper">
           <div class="navBar">
@@ -50,9 +49,6 @@
           </select>
         </div>
 
-
-
-
           <div id="about" class="aboutMeContainer">
             <div class="aboutMeSection">
               <div id="aboutMeTitle">ABOUT ME</div>
@@ -60,7 +56,7 @@
                 <img src="./assets/profile.jpg" alt="" id="profilePicture">
                 <div id="profileDescription">
                   <div class="profileParagraph">
-                    Spicy jalapeno bacon ipsum dolor amet biltong beef cupim meatloaf tenderloin, bresaola sirloin fatback t-bone porchetta. Shank pastrami landjaeger filet mignon prosciutto shankle fatback turducken tri-tip kevin spare ribs sausage chuck bresaola. Leberkas shoulder meatloaf brisket beef ribs. Brisket jerky tenderloin turkey chuck. Porchetta boudin tail leberkas shankle meatloaf. Strip steak bacon turkey ham hock, porchetta kevin venison ribeye drumstick alcatra pancetta. Venison beef ribs pork, tail cupim t-bone strip steak porchetta brisket pork chop sirloin.
+                    You know how people binge-watch netflix?  Well I binge-read Angular and Node docs.  When i'm not spending my free time with my family, I am catching up on the latest technologies and improving my craft. I set challenging goals for myself including solving javascript toy problems on a daily basis, adding new content to my portfolio, and learning new and exciting technologies. I'm always eager to learn more, and I crave knowledge. I value developing and maintaining relationships and going above and beyond expectations for clients, co-workers and teammates. I pay attention to the details, work well in both team and individual settings, and can get things done. My personal mantra is, "Always content, but never satisfied." I strive to be happy and enjoy what I'm doing, but I'm always looking for ways to improve myself or to improve what I'm working on.
                   </div>
                   <div id="paragraphDetails">
                     <ul>
@@ -81,10 +77,56 @@
           <div id="myresume" class="myResumeContainer">
             <div class="myResumeSection">
               <div id="myResumeTitle" class="myResumeTitle">MY RESUME</div>
+              <div id="educationTitle2" class="educationTitle">WORK EXPERIENCE</div>
+              <div id="myResumeWorkExperience">
+                <div id="work1" class="education">
+                  <div class="educationDate">
+                    <div class="dateBox">NOVEMBER 2016 - PRESENT</div>
+                  </div>
+                  <div class="educationName">
+                    <div class="dot"></div>
+                    <div class="collegeParagraph">
+                      <div class="collegeTitle">FREELANCE WEB DEVELOPER</div>
+                      <div class="collegeDescription">
+                        My passion is full-stack web development.  I care as much about the aesthetic of a page as the integrity of the code that's used to build it; a problem solver who finds fulfillment in flawless creative execution; a critical thinker whose suggestions and solutions are built on consideration and understanding. I use the latest web technologies and tools to make beautiful, responsive websites. I'd love to help you on your next project.
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-              <div id="educationTitle1" class="educationTitle">EDUCATION</div>
+                <div id="work2" class="education">
+                  <div class="educationDate">
+                    <div class="dateBox">DECEMBER 2015 - PRESENT</div>
+                  </div>
+                  <div class="educationName">
+                    <div class="dot"></div>
+                    <div class="collegeParagraph">
+                      <div class="collegeTitle">TORCH LMS</div>
+                      <div class="collegeDescription">
+                          Working as a System Specialist at an up-and-coming software company has allowed me to develop many skills and wear many hats. Proficiency in testing web-based systems to identify any performance and quality issues as well as bug tracking. Evaluated new software applications and coordinated with developers to address any defects as well as discuss QA concerns. Committed to ensuring that quality standards are upheld to promote optimal customer satisfaction. Facilitated Single-Sign-On and SFTP integrations with clients and ensured a smooth, well-documented implementation.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="work3" class="education">
+                  <div class="educationDate">
+                    <div class="dateBox">JANUARY 2015 - DECEMBER 2015</div>
+                  </div>
+                  <div class="educationName">
+                    <div class="dot"></div>
+                    <div class="collegeParagraph">
+                      <div class="collegeTitle">SERVER PLUS</div>
+                      <div class="collegeDescription">
+                        Customer-focused Desktop Support Technician with success in a variety of computer operating systems, applications, and hardware. Analytical and adept at resolving complex network issues. Critical thinker who addresses customer support issues quickly and who consistently exceeds performance standards. Responsibilities include: Install, configure, test, maintain, monitor, and troubleshoot end user and network hardware, peripheral devices, printing/scanning devices, and mobile devices using a ticketing system.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <div class="myResumeEducation">
+                <div id="educationTitle1" class="educationTitle">EDUCATION</div>
                 <div id="education1" class="education">
                   <div class="educationDate">
                     <div class="dateBox">APRIL 2016 - AUGUST 2016</div>
@@ -115,38 +157,6 @@
                 </div>
               </div>
 
-              <div id="educationTitle2" class="educationTitle">WORK EXPERIENCE</div>
-
-              <div id="myResumeWorkExperience">
-                <div id="work1" class="education">
-                  <div class="educationDate">
-                    <div class="dateBox">DECEMBER 2015 - PRESENT</div>
-                  </div>
-                  <div class="educationName">
-                    <div class="dot"></div>
-                    <div class="collegeParagraph">
-                      <div class="collegeTitle">TORCH LMS</div>
-                      <div class="collegeDescription">
-                        Spicy jalapeno bacon ipsum dolor amet biltong beef cupim meatloaf tenderloin, bresaola sirloin fatback t-bone porchetta. Shank pastrami landjaeger filet mignon prosciutto shankle fatback turducken tri-tip kevin spare ribs sausage chuck bresaola. Leberkas shoulder meatloaf brisket beef ribs. Brisket jerky tenderloin turkey chuck. Porchetta boudin tail leberkas shankle meatloaf. Strip steak bacon turkey ham hock, porchetta kevin venison ribeye drumstick alcatra pancetta. Venison beef ribs pork, tail cupim t-bone strip steak porchetta brisket pork chop sirloin.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="work2" class="education">
-                  <div class="educationDate">
-                    <div class="dateBox">JANUARY 2015 - DECEMBER 2015</div>
-                  </div>
-                  <div class="educationName">
-                    <div class="dot"></div>
-                    <div class="collegeParagraph">
-                      <div class="collegeTitle">SERVER PLUS</div>
-                      <div class="collegeDescription">
-                        Spicy jalapeno bacon ipsum dolor amet biltong beef cupim meatloaf tenderloin, bresaola sirloin fatback t-bone porchetta. Shank pastrami landjaeger filet mignon prosciutto shankle fatback turducken tri-tip kevin spare ribs sausage chuck bresaola. Leberkas shoulder meatloaf brisket beef ribs. Brisket jerky tenderloin turkey chuck. Porchetta boudin tail leberkas shankle meatloaf. Strip steak bacon turkey ham hock, porchetta kevin venison ribeye drumstick alcatra pancetta. Venison beef ribs pork, tail cupim t-bone strip steak porchetta brisket pork chop sirloin.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               </div>
             </div>
 
@@ -213,9 +223,7 @@
                         Jake White,</br> CEO at Torch LMS
                       </p>
                       <div class="endorsementendorsement">
-                        <i class="material-icons">format_quote</i>
                           Max is exceptional to work with, and gets solid results. He is a team player, he is punctual, and always willing to help out with anything that needs to be done. Max is always pushing himself to learn more and develop himself professionally.
-                        <i class="material-icons">format_quote</i>
                       </div>
                     </div>
                     <div id="endorsement2" class="endorsementComment">
@@ -224,9 +232,7 @@
                         Jaron Mathis,</br> COO at Torch LMS
                       </p>
                       <div class="endorsementendorsement">
-                        <i class="material-icons">format_quote</i>
                         [Max] has shown the ability to wear many different hats, and always runs to the fire to figure out how he can add value for our clients. Specifically, Max has become an indispensable resource through his product knowledge and testing ability on our system.
-                        <i class="material-icons">format_quote</i>
                       </div>
                     </div>
                   </div>
@@ -273,6 +279,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.6.1/angular-touch.min.js" charset="utf-8"></script>
     <script src="./mainController.js" charset="utf-8"></script>
     <script src="./jquery.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
