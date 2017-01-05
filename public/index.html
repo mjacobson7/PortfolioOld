@@ -254,7 +254,7 @@
                     <input class="contactForm" type="text" placeholder="Name" name="" value="" ng-model="user.name">
                     <input class="contactForm" type="text" placeholder="Email" name="" value="" ng-model="user.email">
                     <textarea class="contactArea" placeholder="Message" name="name" rows="8" cols="80" ng-model=user.message></textarea>
-                    <div class="sendButton" ng-click="sendMessage(user)"><i class="material-icons">check_circle</i>SEND</div>
+                    <div class="sendButton" ng-click="sendMessage(user)" ng-touch="sendMessage(user)"><i class="material-icons">check_circle</i>SEND</div>
                   </div>
                   <div id="contactMe">
                     <div class="myInformation"><i class="material-icons">home</i>211 North 1880 East,</br> Spanish Fork, Utah</div>
@@ -277,5 +277,6 @@
     <script src="./jquery.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/sweetalert2/6.3.0/sweetalert2.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-touch.js" charset="utf-8"></script>
   </body>
 </html>

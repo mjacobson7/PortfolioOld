@@ -1,4 +1,4 @@
-angular.module('myPortfolio', [])
+angular.module('myPortfolio', ['ngTouch'])
   .controller('mainController', function($scope, $http) {
 
     $scope.sendMessage = function(user) {
