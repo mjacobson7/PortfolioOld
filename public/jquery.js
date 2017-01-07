@@ -169,7 +169,7 @@ angular.module('myPortfolio')
 
 
           $(window).scroll(function() {
-            $('#mySkillsSkills1').each(function(){
+            $('#mySkillsSkills').each(function(){
             var imagePos = $(this).offset().top;
 
             var topOfWindow = $(window).scrollTop();
@@ -179,16 +179,16 @@ angular.module('myPortfolio')
             });
           });
 
-          $(window).scroll(function() {
-            $('#mySkillsSkills2').each(function(){
-            var imagePos = $(this).offset().top;
-
-            var topOfWindow = $(window).scrollTop();
-              if (imagePos < topOfWindow+600) {
-                $(this).addClass("fadeIn");
-              }
-            });
-          });
+          // $(window).scroll(function() {
+          //   $('#mySkillsSkills2').each(function(){
+          //   var imagePos = $(this).offset().top;
+          //
+          //   var topOfWindow = $(window).scrollTop();
+          //     if (imagePos < topOfWindow+600) {
+          //       $(this).addClass("fadeIn");
+          //     }
+          //   });
+          // });
 
           $(window).scroll(function() {
             $('#endorsement1').each(function(){

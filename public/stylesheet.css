@@ -629,22 +629,46 @@ li h5 span {
 
 .mySkillsContainer {
   background-color: #3F3F3F;
-  height: 575px;
-  width: 100%;
+  height: 585px;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
 
+@media (max-width: 1170px) {
+  .mySkillsContainer {
+    height: 750px;
+  }
+}
+
+@media (max-width: 935px) {
+  .mySkillsContainer {
+    height: 900px;
+  }
+}
+
+@media (max-width: 700px) {
+  .mySkillsContainer {
+    height: 1100px;
+  }
+}
+
+@media (max-width: 467px) {
+  .mySkillsContainer {
+    height: 2500px;
+  }
+}
+
 .mySkillsSection {
   width: 90vw;
-  height: 500px;
-  margin-top: 50px;
+  height: inherit;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
 }
 
 #mySkillsTitle {
-  width: 1170px;
+  width: 100vw;
   height: 100px;
   font-family: 'Lato', sans-serif;
   font-size: 64px;
@@ -654,40 +678,58 @@ li h5 span {
   visibility: hidden;
 }
 
-#mySkillsSkills1 {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 60px;
-  visibility: hidden;
+@media (max-width: 780px) {
+  #mySkillsTitle {
+    font-size: 40px;
+  }
 }
 
-#mySkillsSkills2 {
-  width: 100%;
-  height: 400px;
+#mySkillsSkills {
+  width: inherit;
+  height: 20vh;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-top: 60px;
   visibility: hidden;
 }
 
 .eachSkill {
   width: 170px;
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
+}
+
+@media (max-width: 467px) {
+  .eachSkill {
+    width: 210px;
+  }
 }
 
 #skillIcons {
   color: #fff;
   font-size: 110px;
+  margin-bottom: 2px;
+}
+@media (max-width: 467px) {
+  #skillIcons {
+    font-size: 160px;
+  }
 }
 
 .skillNames {
   color: #fff;
   font-size: 18px;
+}
+
+@media (max-width: 467px) {
+  .skillNames {
+    font-size: 25px;
+  }
 }
 
 .endorsementsContainer {
