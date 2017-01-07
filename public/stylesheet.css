@@ -10,7 +10,7 @@ html body {
 }
 
 .backgroundImage {
-  height: 100vh;
+  height: 615px;
   background: linear-gradient(
                      rgba(53,164,157, .4),
                      rgba(53,164,157, .4)),
@@ -27,7 +27,7 @@ html body {
 
 @media (max-width: 966px) {
   .backgroundImage {
-    height: 80vh;
+    height: 400px;
   }
 }
 
@@ -36,7 +36,7 @@ html body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 10vh;
+  margin-top: 20px;
 }
 
 .homeName {
@@ -309,9 +309,6 @@ html body {
     font-size: 18px;
   }
 }
-
-
-
 
 #paragraphDetails {
   width: inherit;
@@ -653,7 +650,7 @@ li h5 span {
   }
 }
 
-@media (max-width: 467px) {
+@media (max-width: 500px) {
   .mySkillsContainer {
     height: 2550px;
   }
@@ -905,7 +902,6 @@ li h5 span {
   height: inherit;
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
 }
 
 #contactTitle {
@@ -950,7 +946,6 @@ li h5 span {
   display: flex;
   flex-direction: column;
   visibility: hidden;
-  border: 1px solid red;
 
 }
 
@@ -1024,7 +1019,7 @@ li h5 span {
 @media (max-width: 875px) {
   .sendButton {
     width: 90vw;
-    height: 160px;
+    height: 180px;
   }
 }
 
@@ -1066,6 +1061,7 @@ li h5 span {
 @media (max-width: 1040px) {
   #contactMe {
     width: 22vw;
+    height: 44vh;
   }
 }
 
