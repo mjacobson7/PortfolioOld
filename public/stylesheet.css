@@ -405,7 +405,6 @@ li h5 span {
   background-color: #F9F5EA;
   display: flex;
   justify-content: center;
-  border: 2px solid red;
 }
 
 @media (max-width: 1350px) {
@@ -832,7 +831,7 @@ li h5 span {
 
 .portfolioContainer {
   background-color: #F9F5EA;
-  height: auto;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
