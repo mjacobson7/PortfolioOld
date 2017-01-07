@@ -7,7 +7,6 @@ angular.module('myPortfolio', ['ngTouch'])
         url: '/api/sendmail',
         data: user
       }).then(function(response) {
-        // swal("You Rock!", "Your message has been sent!", "success");
         swal({
           title: 'You Rock!',
           text: "Your message has been sent!",

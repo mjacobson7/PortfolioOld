@@ -905,6 +905,7 @@ li h5 span {
   height: inherit;
   display: flex;
   flex-direction: column;
+  border: 1px solid green;
 }
 
 #contactTitle {
@@ -939,6 +940,7 @@ li h5 span {
     width: 100%;
     flex-direction: column;
     align-items: center;
+    margin-top: 0px;
   }
 }
 
@@ -948,11 +950,14 @@ li h5 span {
   display: flex;
   flex-direction: column;
   visibility: hidden;
+  border: 1px solid red;
+
 }
 
 @media (max-width: 875px) {
   #contactInput {
     width: 90vw;
+    height: 100vh;
   }
 }
 
@@ -966,6 +971,12 @@ li h5 span {
   margin-top: 10px;
 }
 
+@media (max-width: 875px) {
+  .contactForm {
+    height: 160px;
+  }
+}
+
 .contactArea {
   background: transparent;
   border: 2px solid #ffe89c;
@@ -975,6 +986,12 @@ li h5 span {
   outline: none;
   resize: none;
   margin-top: 10px;
+}
+
+@media (max-width: 875px) {
+  .contactArea {
+    height: 500px;
+  }
 }
 
 .contactForm::-webkit-input-placeholder {
@@ -1004,6 +1021,13 @@ li h5 span {
   align-self: flex-end;
 }
 
+@media (max-width: 875px) {
+  .sendButton {
+    width: 90vw;
+    height: 160px;
+  }
+}
+
 .sendButton:hover {
   background-color: #3E3E3E;
   color: #fff;
@@ -1030,6 +1054,12 @@ li h5 span {
 @media (max-width: 1275px) {
   #contactMe div {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 875px) {
+  #contactMe div {
+    font-size: 16px;
   }
 }
 
@@ -1080,664 +1110,3 @@ li h5 span {
   color: #fff;
   font-size: 20px;
 }
-
-
-/*TABLETS*/
-/*@media (max-width : 1200px) {
-
-  .backgroundImage {
-    height: 800px;
-  }
-
-  .homeLogo {
-    width: 100%;
-  }
-
-  .homeName {
-    font-size: 90px;
-  }
-
-  .navBar ul li a {
-    font-size: 12px;
-  }
-
-  .aboutMeContainer {
-    height: 750px;
-  }
-
-  .aboutMeSection {
-    width: 90%;
-    height: 700px;
-  }
-
-  .aboutMeMain {
-    width: 100%;
-  }
-
-  #profilePicture {
-    border: 8px solid #9AD1CE;
-    width: 200px;
-    height: 317px;
-    visibility: hidden;
-  }
-
-  #profileDescription {
-    height: 850px;
-    width: 875px;
-    margin-left: 30px;
-    color: #fff;
-    visibility: hidden;
-  }
-
-  .profileParagraph {
-    font-family: 'Raleway', sans-serif;
-    font-size: 19px;
-    height: 200px;
-  }
-
-  #paragraphDetails {
-    height: 100px;
-    display: flex;
-  }
-
-  #paragraphDetails ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .myResumeSection {
-    width: 90%;
-  }
-
-  .myResumeEducation {
-    width: 100%;
-  }
-
-  #myResumeWorkExperience {
-    width: 100%;
-  }
-
-  .collegeParagraph {
-    width: 100%;
-    height: 200px;
-  }
-
-  .collegeDescription {
-    margin-top: 15px;
-    width: 100%;
-  }
-
-  .mySkillsSection {
-    width: 90%;
-
-  }
-
-  .endorsementsContainer {
-    height: 930px;
-  }
-
-  .endorsementsSection {
-    width: 90%;
-  }
-
-  #endorsementsTitle {
-    width: 100%;
-  }
-
-  .endorsements {
-    width: 100%;
-    height: 700px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .endorsementComment {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    visibility: hidden;
-  }
-
-  .endorsementendorsement {
-    height: 90px;
-  }
-
-  .portfolioSection {
-    width: 90%;
-  }
-
-  .portfolioItem {
-    height: 211px;
-    width: 330px;
-    margin: 5px;
-  }
-
-  .contactSection {
-    width: 90%;
-  }
-
-  #contactInput {
-    height: 90%;
-    width: 70%;
-  }
-
-  .contactForm {
-    width: 640px;
-  }
-
-  .contactArea {
-    max-width: 651px;
-  }
-
-  .sendButton {
-    width: 146px;
-    height: 62px;
-    background-color: #ffe89c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 20px;
-    margin-top: 25px;
-    align-self: flex-end;
-  }
-
-  .sendButton:hover {
-    background-color: #3E3E3E;
-    color: #fff;
-    transition: 0.4s;
-    cursor: pointer;
-  }
-
-  #contactMe {
-    background-color: rgba(63,63,63,0.5);
-    height: 310px;
-    width: 195px;
-    margin-left: 10px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-  }
-
-  .myInformation {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    color: #fff;
-    font-size: 16px;
-    margin-left: 10px;
-  }
-
-  .myInformation i {
-    color: #ffe89c;
-    width: 100%;
-    margin-left: 5px;
-    margin-right: 0px;
-  }
-
-
-
-}*/
-/*END TABLET RESPONSIVE DESIGN*/
-
-/*@media (max-width : 725px) {
-
-  .backgroundImage {
-    height: 440px;
-    background: linear-gradient(
-                       rgba(53,164,157, .4),
-                       rgba(53,164,157, .4)),
-                       url("./assets/laptop.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .homeLogo {
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10vh;
-  }
-
-  .homeName {
-    font-family: 'Lato', sans-serif;
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 0px;
-    text-align: center;
-  }
-
-  .homeTagline {
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-  }
-
-  .nav-wrapper {
-    display: none;
-  }
-
-  .mobileNav {
-    visibility: visible;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    background-color: #3E3E3E;
-  }
-
-  .mobileNav select {
-    height: 40px;
-    width: 90%;
-    border: 1px solid #3E3E3E;
-    border-radius: 5px;
-    font-size: 20px;
-  }
-
-  .aboutMeContainer {
-    height: 1550px;
-    width: 100%;
-    align-items: flex-start;
-  }
-
-  .aboutMeSection {
-    width: 90%;
-    height: 90%;
-    margin-top: 100px;
-  }
-
-  #aboutMeTitle {
-    width: 100%;
-    height: 100px;
-    font-family: 'Lato', sans-serif;
-    font-size: 40px;
-    color: #fff;
-    border-left: 8px solid #9AD1CE;
-    padding-left: 20px;
-    visibility: hidden;
-  }
-
-  .aboutMeMain {
-    width: 100%;
-    height: 417px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #profilePicture {
-    border: 15px solid #9AD1CE;
-    width: 340px;
-    height: 540px;
-    visibility: hidden;
-  }
-
-  #profileDescription {
-    height: 717px;
-    width: 370px;
-    margin-left: 0px;
-    margin-top: 20px;
-    color: #fff;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .profileParagraph {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    height: 1000px;
-  }
-
-  #paragraphDetails {
-    margin-top: 50px;
-    height: 500px;
-  }
-
-  #paragraphDetails ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  li h5 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  li h5 span {
-    font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-  }
-
-  .downloadResume p {
-    width: 296px;
-    height: 60px;
-    border: 1px solid #FFE89C;
-    margin-top: 57px;
-    background-color: #FFE89C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    outline: none;
-  }
-
-  .myResumeContainer {
-    height: 2250px;
-  }
-
-  .myResumeSection {
-    width: 90%;
-  }
-
-  .myResumeTitle {
-    width: 100%;
-    height: 100px;
-    font-size: 40px;
-    margin-bottom: 10px;
-  }
-
-  #myResumeWorkExperience {
-    width: 100%;
-    height: 515px;
-  }
-
-  .myResumeEducation {
-    width: 100%;
-    height: 950px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .educationTitle {
-    font-size: 30px;
-    font-weight: bolder;
-    margin-top: 10px;
-  }
-
-  .education {
-    height: 450px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .educationDate {
-    width: 100%;
-    margin-top: 50px;
-    padding-right: 0px;
-    border-right: none;
-    display: flex;
-    align-items: center;
-  }
-
-  .educationName {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    }
-
-  .dateBox {
-    height: 54px;
-    width: 360px;
-    background-color: #FFE89C;
-    font-family: 'Lato', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .dot {
-    display: none;
-  }
-
-  .collegeParagraph {
-    width: 100%;
-    height: 280px;
-    margin-left: 20px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mySkillsContainer {
-    height: 2500px;
-    width: 100%;
-  }
-
-  .mySkillsSection {
-    width: 90%;
-    height: 2400px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #mySkillsSkills1 {
-    width: 100%;
-    height: 1200px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
-    visibility: hidden;
-    flex-direction: column;
-  }
-
-  #mySkillsSkills2 {
-    width: 100%;
-    height: 1200px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 0px;
-    visibility: hidden;
-    flex-direction: column;
-  }
-
-  .eachSkill {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-
-  #skillIcons {
-    color: #fff;
-    font-size: 180px;
-  }
-
-  .skillNames {
-    color: #fff;
-    font-size: 18px;
-  }
-
-  #mySkillsTitle {
-    font-size: 40px;
-  }
-
-  .endorsementsContainer {
-    display: flex;
-    justify-content: center;
-    height: 1000px;
-    width: 100%;
-    background: linear-gradient(
-                       rgba(53,164,157, .8),
-                       rgba(53,164,157, .8)),
-                       url("./assets/city9.jpg") no-repeat center center fixed;
-  }
-
-  .endorsementsSection {
-    height: 100%;
-    width: 90%;
-    margin-top: 50px;
-  }
-
-  #endorsementsTitle {
-    width: 100%;
-    height: 100px;
-    font-family: 'Lato', sans-serif;
-    font-size: 40px;
-    color: #fff;
-    border-left: 8px solid #B8D4DB;
-    padding-left: 20px;
-    visibility: hidden;
-  }
-
-  .endorsements {
-    width: 100%;
-    height: 1500px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .endorsementComment {
-    width: 100%;
-    height: 350px;
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    visibility: hidden;
-  }
-
-  .endorsePicture {
-    height: 125px;
-    width: 125px;
-    border: 6px solid #9AD1CE;
-  }
-
-  .aboutEndorser {
-    height: 55px;
-    width: 200px;
-    font-size: 18px;
-    margin: 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-left: 10px;
-    color: #fff;
-  }
-
-  .endorsementendorsement {
-    font-weight: bold;
-    font-size: 18px;
-    height: 160px;
-    width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 0px;
-  }
-
-  .portfolioItem {
-    margin: 5px;
-  }
-
-  .portfolioSection {
-    width: 90%;
-  }
-
-  .portfolioTitle {
-    font-size: 40px;
-  }
-
-  .contactContainer {
-    height: 950px;
-  }
-
-  .contactSection {
-    width: 90%;
-  }
-
-  #contactTitle {
-    font-size: 40px;
-  }
-
-  .contactBody {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 75px;
-    margin-top: 50px;
-  }
-
-  #contactInput {
-    height: 350px;
-    width: 378px;
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-  }
-
-  .contactForm {
-    width: 372px;
-    height: 42px;
-    text-decoration: none;
-    border: 2px solid #ffe89c;
-    background: transparent;
-    outline: none;
-    margin-top: 10px;
-  }
-
-  .contactArea {
-    max-width: 378px;
-    max-height: 120px;
-  }
-
-  #contactMe {
-    background-color: rgba(63,63,63,0.5);
-    height: 300px;
-    width: 100%;
-    margin-left: 0px;
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-  }
-
-  .myInformation {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-size: 18px;
-  }
-
-  .myInformation i {
-    color: #ffe89c;
-    margin-left: 20px;
-    margin-right: 10px;
-  }
-
-
-
-
-
-
-
-}*/
-/*END PHONE RESPONSIVE DESIGN*/
