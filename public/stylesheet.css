@@ -745,7 +745,7 @@ li h5 span {
 
 @media (max-width: 1000px) {
   .endorsementsContainer {
-    height: 800px;
+    height: 900px;
   }
 }
 
@@ -821,7 +821,7 @@ li h5 span {
   width: 90%;
   border: 2px solid #FFE89C;
   color: #fff;
-  padding: 8px;
+  padding: 15px;
   margin-top: 5px;
   display: flex;
   align-items: center;
