@@ -205,21 +205,27 @@ html body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .aboutMeContainer {
     height: 1200px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .aboutMeContainer {
     height: 1300px;
   }
 }
 
+@media (max-width: 500px) {
+  .aboutMeContainer {
+    height: 1400px;
+  }
+}
+
 @media (max-width: 450px) {
   .aboutMeContainer {
-    height: 1370px;
+    height: 1500px;
   }
 }
 
@@ -241,6 +247,12 @@ html body {
   margin-top: 75px;
   margin-bottom: 10px;
   visibility: hidden;
+}
+
+@media (max-width: 780px) {
+  #aboutMeTitle {
+    font-size: 40px;
+  }
 }
 
 .aboutMeMain {
@@ -321,7 +333,15 @@ html body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 780px) {
+  #paragraphDetails ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 #paragraphDetails ul li h5 {
@@ -383,11 +403,53 @@ li h5 span {
 }
 
 .myResumeContainer {
-  height: 1450px;
+  height: 1150px;
   width: 100vw;
   background-color: #F9F5EA;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1350px) {
+  .myResumeContainer {
+    height: 1250px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .myResumeContainer {
+    height: 1400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .myResumeContainer {
+    height: 1700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .myResumeContainer {
+    height: 1800px;
+  }
+}
+
+@media (max-width: 600px) {
+  .myResumeContainer {
+    height: 1900px;
+  }
+}
+
+@media (max-width: 500px) {
+  .myResumeContainer {
+    height: 2000px;
+  }
+}
+
+@media (max-width: 450px) {
+  .myResumeContainer {
+    height: 2100px;
+  }
 }
 
 .myResumeSection {
@@ -395,7 +457,7 @@ li h5 span {
 }
 
 .myResumeTitle {
-  width: 1170px;
+  width: 100vw;
   height: 100px;
   font-family: 'Lato', sans-serif;
   font-size: 64px;
@@ -406,16 +468,23 @@ li h5 span {
   margin-top: 70px;
 }
 
+@media (max-width: 780px) {
+  .myResumeTitle {
+    font-size: 40px;
+  }
+}
+
 .myResumeEducation {
-  width: 1170px;
-  height: 515px;
+  width: inherit;
+  height: inherit;
   display: flex;
   flex-direction: column;
+
 }
 
 #myResumeWorkExperience {
-  width: 1170px;
-  height: 650px;
+  width: inherit;
+  height: inherit;
 }
 
 .educationTitle {
@@ -426,9 +495,17 @@ li h5 span {
 }
 
 .education {
-  height: 219px;
-  width: 100vw;
+  height: auto;
+  width: inherit;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+}
+
+@media (max-width: 800px) {
+  .education {
+    flex-direction: column;
+  }
 }
 
 .education:hover .dot {
@@ -437,11 +514,17 @@ li h5 span {
 }
 
 .educationDate {
-  width: 234px;
+  width: 15vw;
   padding-right: 30px;
   border-right: 1px solid #35A49D;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 800px) {
+  .educationDate {
+    border-right: none;
+  }
 }
 
 .educationName {
@@ -451,9 +534,10 @@ li h5 span {
 }
 
 .dateBox {
-  height: 94px;
-  width: 160px;
-  padding: 20px;
+  height: 11vh;
+  width: 18vw;
+  padding: 12px;
+  border-radius: 5px;
   background-color: #FFE89C;
   font-family: 'Lato', sans-serif;
   display: flex;
@@ -462,22 +546,41 @@ li h5 span {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  .dateBox {
+    min-width: 40vw;
+    max-height: 5vh;
+    margin-top: 20px;
+  }
+}
+
 .dot {
-  height: 30px;
-  width: 30px;
+  min-height: 30px;
+  min-width: 30px;
   border-radius: 50%;
   border: 3px solid #35A49D;
-  margin-left: -18px;
+  margin-left: -19px;
   background-color: #fff;
 }
 
+@media (max-width: 800px) {
+  .dot {
+    display: none;
+  }
+}
+
 .collegeParagraph {
-  width: 950px;
-  height: 180px;
+  width: auto;
   margin-left: 20px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 800px) {
+   .collegeParagraph {
+     margin-left: 0px;
+   }
 }
 
 .collegeTitle {
@@ -490,7 +593,9 @@ li h5 span {
   color: #807d7c;
   line-height: 20px;
   margin-top: 15px;
-  width: 80%;
+  width: inherit;
+  height: auto;
+  padding: 15px 0px;
 }
 
 
