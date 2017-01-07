@@ -401,10 +401,11 @@ li h5 span {
 
 .myResumeContainer {
   height: 1150px;
-  width: 100vw;
+  width: 100%;
   background-color: #F9F5EA;
   display: flex;
   justify-content: center;
+  border: 2px solid red;
 }
 
 @media (max-width: 1350px) {
