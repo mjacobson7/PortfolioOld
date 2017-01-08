@@ -1025,6 +1025,7 @@ li h5 span {
 @media (max-width: 875px) {
   .sendButton {
     width: 90vw;
+    margin-top: 10px;
     height: 180px;
   }
 }
