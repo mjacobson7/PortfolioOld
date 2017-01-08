@@ -271,8 +271,8 @@ html body {
 #profilePicture {
   border: 8px solid #9AD1CE;
   visibility: hidden;
-  width: 300px;
-  height: 417px;
+  /*width: 300px;
+  height: 417px;*/
 }
 
 #profileDescription {
@@ -794,8 +794,8 @@ li h5 span {
 }
 
 .endorsePicture {
-  height: 125px;
-  width: 125px;
+  /*height: 125px;
+  width: 125px;*/
   border: 6px solid #9AD1CE;
 }
 
