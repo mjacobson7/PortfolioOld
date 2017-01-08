@@ -232,8 +232,6 @@ html body {
 .aboutMeSection {
   width: 90vw;
   height: inherit;
-  border: 1px solid red;
-
 }
 
 
@@ -453,8 +451,6 @@ li h5 span {
 
 .myResumeSection {
   width: 90vw;
-  border: 1px solid blue;
-
 }
 
 .myResumeTitle {
@@ -654,19 +650,17 @@ li h5 span {
   }
 }
 
-@media (max-width: 500px) {
+/*@media (max-width: 467px) {
   .mySkillsContainer {
     height: 2550px;
   }
-}
+}*/
 
 .mySkillsSection {
   width: 90vw;
   height: inherit;
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
-
 }
 
 #mySkillsTitle {
@@ -699,7 +693,7 @@ li h5 span {
 }
 
 .eachSkill {
-  width: 170px;
+  width: 140px;
   height: auto;
   display: flex;
   align-items: center;
@@ -707,33 +701,33 @@ li h5 span {
   padding: 20px;
 }
 
-@media (max-width: 467px) {
+/*@media (max-width: 467px) {
   .eachSkill {
     width: 210px;
   }
-}
+}*/
 
 #skillIcons {
   color: #fff;
   font-size: 110px;
   margin-bottom: 2px;
 }
-@media (max-width: 467px) {
+/*@media (max-width: 467px) {
   #skillIcons {
     font-size: 160px;
   }
-}
+}*/
 
 .skillNames {
   color: #fff;
   font-size: 18px;
 }
-
+/*
 @media (max-width: 467px) {
   .skillNames {
     font-size: 25px;
   }
-}
+}*/
 
 .endorsementsContainer {
   display: flex;
@@ -755,8 +749,6 @@ li h5 span {
 .endorsementsSection {
   height: inherit;
   width: 90vw;
-  border: 1px solid red;
-
 }
 
 #endorsementsTitle {
@@ -855,8 +847,6 @@ li h5 span {
 .portfolioSection {
   width: 90vw;
   height: inherit;
-  border: 1px solid blue;
-
 }
 
 .portfolioTitle {
@@ -918,8 +908,6 @@ li h5 span {
   height: inherit;
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
-
 }
 
 #contactTitle {
