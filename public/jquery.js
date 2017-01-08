@@ -13,16 +13,10 @@ angular.module('myPortfolio')
        });
 
         $(window).bind('scroll', function() {
-          if($(window).width() <= 768 && $(window).height() <= 1024) {
-            var navHeight = $( window ).height() + -225;
-          } else if($(window).width() <= 1024 && $(window).height() <= 768) {
-            var navHeight = $( window ).height() + 33;
-          } else if($(window).width() <= 1024 && $(window).height() <= 1366) {
-            var navHeight = $( window ).height() + -568;
-          } else if($(window).width() <= 1366 && $(window).height() <= 1024) {
-            var navHeight = $( window ).height() + 52;
+          if($(window).width() <= 966) {
+            var navHeight = $( window ).height() - 290;
           } else {
-            var navHeight = $( window ).height() + 35;
+            var navHeight = $( window ).height() - 74;
           }
 
       			 if ($(window).scrollTop() > navHeight) {
