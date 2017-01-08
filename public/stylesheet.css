@@ -838,13 +838,19 @@ li h5 span {
   justify-content: center;
 }
 
+@media (max-width: 865px) {
+  .portfolioContainer {
+    height: 1150px;
+  }
+}
+
 .portfolioSection {
-  margin-top: 75px;
   width: 90vw;
-  height: auto;
+  height: inherit;
 }
 
 .portfolioTitle {
+  margin-top: 50px;
   width: 100%;
   height: 100px;
   font-family: 'Lato', sans-serif;
