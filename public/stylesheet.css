@@ -1020,6 +1020,7 @@ li h5 span {
   font-size: 20px;
   margin-top: 25px;
   align-self: flex-end;
+  border: none;
 }
 
 @media (max-width: 875px) {

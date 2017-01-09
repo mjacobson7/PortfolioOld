@@ -253,12 +253,22 @@
               <div class="contactSection">
                 <div id="contactTitle">CONTACT</div>
                 <div class="contactBody">
-                  <div id="contactInput">
-                    <input class="contactForm" type="text" placeholder="Name" name="" value="" ng-model="user.name">
-                    <input class="contactForm" type="text" placeholder="Email" name="" value="" ng-model="user.email">
-                    <textarea class="contactArea" placeholder="Message" name="name" rows="8" cols="80" ng-model=user.message></textarea>
-                    <div class="sendButton" ng-click="sendMessage(user)"><i class="material-icons">check_circle</i>SEND</div>
-                  </div>
+                  <form id="contactInput" name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+
+                    <input type="text" name="name" class="contactForm" placeholder="Name"  ng-model="user.name" autocomplete="off" required>
+                    <p ng-show="userForm.name.$invalid && !userForm.name.$pristine && submitted" class="help-block">Your name is required.</p>
+
+                    <input class="contactForm" type="email" placeholder="Email" name="email" ng-model="user.email" autocomplete="off" required>
+                    <p ng-show="userForm.email.$invalid && !userForm.email.$pristine && submitted" class="help-block">Please enter a valid email</p>
+
+                    <textarea class="contactArea" placeholder="Message" name="message" rows="8" cols="80" ng-model="user.message" autocomplete="off" required></textarea>
+                    <p ng-show="userForm.message.$invalid && !userForm.message.$pristine && submitted" class="help-block">Please enter a message</p>
+
+                    <button type="submit" class="sendButton"><i class="material-icons">check_circle</i>SEND</button>
+
+                  </form>
+
+
                   <div id="contactMe">
                     <div class="myInformation"><i class="material-icons">home</i>211 North 1880 East,</br> Spanish Fork, Utah</div>
                     <div class="myInformation"><i class="material-icons">phone</i>801 234 0170</div>
