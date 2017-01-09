@@ -231,55 +231,67 @@ html body {
 
 @media (max-width: 780px) {
   .aboutMeContainer {
-    height: 1200px;
+    height: 1150px;
   }
 }
 
 @media (max-width: 700px) {
   .aboutMeContainer {
-    height: 1250px;
+    height: 1200px;
   }
 }
 
 @media (max-width: 596px) {
   .aboutMeContainer {
+    height: 1225px;
+  }
+}
+
+@media (max-width: 520px) {
+  .aboutMeContainer {
+    height: 1275px;
+  }
+}
+
+@media (max-width: 456px) {
+  .aboutMeContainer {
     height: 1300px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 445px) {
   .aboutMeContainer {
     height: 1350px;
   }
 }
 
-@media (max-width: 454px) {
+@media (max-width: 412px) {
+  .aboutMeContainer {
+    height: 1375px;
+  }
+}
+
+@media (max-width: 395px) {
   .aboutMeContainer {
     height: 1400px;
   }
 }
 
-@media (max-width: 408px) {
+@media (max-width: 374px) {
   .aboutMeContainer {
-    height: 1450px;
+    height: 1440px;
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 360px) {
   .aboutMeContainer {
-    height: 1500px;
+    height: 1460px;
   }
 }
 
-@media (max-width: 356px) {
+@media (max-width: 348px) {
   .aboutMeContainer {
-    height: 1550px;
-  }
-}
-
-@media (max-width: 326px) {
-  .aboutMeContainer {
-    height: 1600px;
+    height: 1440px;
   }
 }
 
@@ -331,8 +343,6 @@ html body {
 #profilePicture {
   border: 8px solid #9AD1CE;
   visibility: hidden;
-  /*width: 300px;
-  height: 417px;*/
 }
 
 @media (max-width: 350px) {
@@ -511,27 +521,87 @@ li h5 span {
   }
 }
 
+@media (max-width: 781px) {
+  .myResumeContainer {
+    height: 1600px;
+  }
+}
+
 @media (max-width: 700px) {
   .myResumeContainer {
-    height: 1800px;
+    height: 1750px;
+  }
+}
+
+@media (max-width: 605px) {
+  .myResumeContainer {
+    height: 1775px;
   }
 }
 
 @media (max-width: 600px) {
   .myResumeContainer {
+    height: 1800px;
+  }
+}
+
+@media (max-width: 505px) {
+  .myResumeContainer {
+    height: 1850px;
+  }
+}
+
+@media (max-width: 498px) {
+  .myResumeContainer {
     height: 1900px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 468px) {
+  .myResumeContainer {
+    height: 1950px;
+  }
+}
+
+@media (max-width: 440px) {
   .myResumeContainer {
     height: 2000px;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 399px) {
+  .myResumeContainer {
+    height: 2050px;
+  }
+}
+
+@media (max-width: 377px) {
+  .myResumeContainer {
+    height: 2075px;
+  }
+}
+
+@media (max-width: 361px) {
+  .myResumeContainer {
+    height: 2150px;
+  }
+}
+
+@media (max-width: 345px) {
   .myResumeContainer {
     height: 2200px;
+  }
+}
+
+@media (max-width: 335px) {
+  .myResumeContainer {
+    height: 2250px;
+  }
+}
+
+@media (max-width: 321px) {
+  .myResumeContainer {
+    height: 2300px;
   }
 }
 
@@ -754,6 +824,12 @@ li h5 span {
   }
 }
 
+@media (max-width: 320px) {
+  .mySkillsContainer {
+    height: 850px;
+  }
+}
+
 .mySkillsSection {
   width: 90vw;
   height: inherit;
@@ -969,7 +1045,31 @@ li h5 span {
 
 @media (max-width: 865px) {
   .portfolioContainer {
-    height: 1150px;
+    height: 950px;
+  }
+}
+
+@media (max-width: 440px) {
+  .portfolioContainer {
+    height: 850px;
+  }
+}
+
+@media (max-width: 403px) {
+  .portfolioContainer {
+    height: 800px;
+  }
+}
+
+@media (max-width: 387px) {
+  .portfolioContainer {
+    height: 725px;
+  }
+}
+
+@media (max-width: 368px) {
+  .portfolioContainer {
+    height: 675px;
   }
 }
 
