@@ -497,7 +497,7 @@ li h5 span {
 
 .myResumeContainer {
   /*height: 1150px;*/
-  width: 100%;
+  /*width: 100%;*/
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #F9F5EA;
@@ -986,7 +986,7 @@ li h5 span {
 
 .endorsementComment {
   width: 100%;
-  height: 100%;
+  height: inherit;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
