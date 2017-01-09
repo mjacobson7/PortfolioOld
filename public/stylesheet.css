@@ -496,14 +496,15 @@ li h5 span {
 }
 
 .myResumeContainer {
-  height: 1150px;
+  /*height: 1150px;*/
   width: 100%;
+  overflow: auto;
   background-color: #F9F5EA;
   display: flex;
   justify-content: center;
 }
 
-@media (max-width: 1350px) {
+/*@media (max-width: 1350px) {
   .myResumeContainer {
     height: 1250px;
   }
@@ -603,7 +604,7 @@ li h5 span {
   .myResumeContainer {
     height: 2300px;
   }
-}
+}*/
 
 .myResumeSection {
   width: 90vw;
@@ -965,9 +966,10 @@ li h5 span {
 
 .endorsements {
   width: 100%;
-  height: 350px;
+  height: inherit;
   margin-top: 40px;
   display: flex;
+  border: 1px solid red;
 }
 
 @media (max-width: 1000px) {
@@ -986,6 +988,7 @@ li h5 span {
   flex-wrap: wrap;
   visibility: hidden;
   margin-bottom: 20px;
+  border: 1px solid blue;
 }
 
 .endorsePicture {
@@ -1013,7 +1016,8 @@ li h5 span {
 .endorsementendorsement {
   font-weight: bold;
   font-size: 18px;
-  height: 120px;
+  /*height: 120px;*/
+  overflow: auto;
   width: 90%;
   border: 2px solid #FFE89C;
   color: #fff;
@@ -1396,4 +1400,9 @@ li h5 span {
 .reserved {
   color: #fff;
   font-size: 20px;
+}
+
+.help-block {
+  color: #cc2626;
+  font-family: 'Lato', sans-serif;
 }

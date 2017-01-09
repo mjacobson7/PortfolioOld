@@ -256,7 +256,7 @@
                   <form id="contactInput" name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
 
                     <input type="text" name="name" class="contactForm" placeholder="Name"  ng-model="user.name" autocomplete="off" required>
-                    <p ng-show="userForm.name.$invalid && !userForm.name.$pristine && submitted" class="help-block">Your name is required.</p>
+                    <p ng-show="userForm.name.$invalid && !userForm.name.$pristine && submitted" class="help-block">Your name is required</p>
 
                     <input class="contactForm" type="email" placeholder="Email" name="email" ng-model="user.email" autocomplete="off" required>
                     <p ng-show="userForm.email.$invalid && !userForm.email.$pristine && submitted" class="help-block">Please enter a valid email</p>
