@@ -498,7 +498,8 @@ li h5 span {
 .myResumeContainer {
   /*height: 1150px;*/
   width: 100%;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: #F9F5EA;
   display: flex;
   justify-content: center;
@@ -921,7 +922,9 @@ li h5 span {
 .endorsementsContainer {
   display: flex;
   justify-content: center;
-  height: 550px;
+  /*height: 550px;*/
+  overflow-y: auto;
+  overflow-x: hidden;
   width: 100vw;
   background: linear-gradient(
                      rgba(53,164,157, .8),
@@ -938,6 +941,7 @@ li h5 span {
 .endorsementsSection {
   height: inherit;
   width: 90vw;
+  border: 1px solid green;
 }
 
 #endorsementsTitle {
@@ -966,7 +970,7 @@ li h5 span {
 
 .endorsements {
   width: 100%;
-  height: inherit;
+  height: 100%;
   margin-top: 40px;
   display: flex;
   border: 1px solid red;
@@ -1234,7 +1238,9 @@ li h5 span {
 }
 
 #contactInput {
-  height: 100%;
+  /*height: 100%;*/
+  overflow-y: auto;
+  overflow-x: hidden;
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -1306,6 +1312,7 @@ li h5 span {
   font-weight: bolder;
   font-size: 20px;
   margin-top: 25px;
+  margin-bottom: 20px;
   align-self: flex-end;
   border: none;
 }
