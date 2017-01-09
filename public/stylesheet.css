@@ -65,6 +65,12 @@ html body {
   }
 }
 
+@media (max-width: 390px) {
+  .homeName {
+    font-size: 30px;
+  }
+}
+
 .homeTagline {
   font-family: 'Raleway', sans-serif;
   font-size: 45px;
@@ -87,6 +93,12 @@ html body {
 @media (max-width: 580px) {
   .homeTagline {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 390px) {
+  .homeTagline {
+    font-size: 20px;
   }
 }
 
@@ -193,6 +205,12 @@ html body {
   justify-content: center;
 }
 
+@media (max-width: 1032px) {
+  .aboutMeContainer {
+    height: 750px;
+  }
+}
+
 @media (max-width: 1000px) {
   .aboutMeContainer {
     height: 1000px;
@@ -200,6 +218,12 @@ html body {
 }
 
 @media (max-width: 900px) {
+  .aboutMeContainer {
+    height: 1050px;
+  }
+}
+
+@media (max-width: 858px) {
   .aboutMeContainer {
     height: 1100px;
   }
@@ -213,19 +237,49 @@ html body {
 
 @media (max-width: 700px) {
   .aboutMeContainer {
+    height: 1250px;
+  }
+}
+
+@media (max-width: 596px) {
+  .aboutMeContainer {
     height: 1300px;
   }
 }
 
 @media (max-width: 500px) {
   .aboutMeContainer {
+    height: 1350px;
+  }
+}
+
+@media (max-width: 454px) {
+  .aboutMeContainer {
     height: 1400px;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 408px) {
+  .aboutMeContainer {
+    height: 1450px;
+  }
+}
+
+@media (max-width: 380px) {
   .aboutMeContainer {
     height: 1500px;
+  }
+}
+
+@media (max-width: 356px) {
+  .aboutMeContainer {
+    height: 1550px;
+  }
+}
+
+@media (max-width: 326px) {
+  .aboutMeContainer {
+    height: 1600px;
   }
 }
 
@@ -238,7 +292,7 @@ html body {
 
 #aboutMeTitle {
   width: 100vw;
-  height: 100px;
+  height: auto;
   font-family: 'Lato', sans-serif;
   font-size: 64px;
   color: #fff;
@@ -252,6 +306,12 @@ html body {
 @media (max-width: 780px) {
   #aboutMeTitle {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  #aboutMeTitle {
+    font-size: 30px;
   }
 }
 
@@ -273,6 +333,13 @@ html body {
   visibility: hidden;
   /*width: 300px;
   height: 417px;*/
+}
+
+@media (max-width: 350px) {
+  #profilePicture {
+    width: 80vw;
+    height: auto;
+  }
 }
 
 #profileDescription {
@@ -307,6 +374,12 @@ html body {
 @media (max-width: 1300px) {
   .profileParagraph {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 350px) {
+  .profileParagraph {
+    font-size: 17px;
   }
 }
 
@@ -350,6 +423,12 @@ li h5 span {
   font-family: 'Raleway', sans-serif;
 }
 
+@media (max-width: 350px) {
+   li h5 span {
+    font-size: 17px;
+  }
+}
+
 .downloadResume {
   width: 296px;
   height: 60px;
@@ -361,6 +440,13 @@ li h5 span {
   cursor: pointer;
   text-decoration: none;
   outline: none;
+}
+
+@media (max-width: 325px) {
+  .downloadResume {
+    width: 90vw;
+    height: 12vh;
+  }
 }
 
 .downloadResume:hover {
@@ -455,7 +541,7 @@ li h5 span {
 
 .myResumeTitle {
   width: 100vw;
-  height: 100px;
+  height: auto;
   font-family: 'Lato', sans-serif;
   font-size: 64px;
   color: #3F3F3F;
@@ -468,6 +554,12 @@ li h5 span {
 @media (max-width: 780px) {
   .myResumeTitle {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .myResumeTitle {
+    font-size: 30px;
   }
 }
 
@@ -632,29 +724,35 @@ li h5 span {
   justify-content: center;
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 999px) {
   .mySkillsContainer {
     height: 750px;
   }
 }
 
-@media (max-width: 935px) {
+@media (max-width: 799px) {
   .mySkillsContainer {
     height: 900px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 599px) {
   .mySkillsContainer {
     height: 1100px;
   }
 }
 
-/*@media (max-width: 467px) {
+@media (max-width: 400px) {
   .mySkillsContainer {
-    height: 2550px;
+    height: 1000px;
   }
-}*/
+}
+
+@media (max-width: 361px) {
+  .mySkillsContainer {
+    height: 910px;
+  }
+}
 
 .mySkillsSection {
   width: 90vw;
@@ -665,7 +763,7 @@ li h5 span {
 
 #mySkillsTitle {
   width: 100vw;
-  height: 100px;
+  height: auto;
   font-family: 'Lato', sans-serif;
   font-size: 64px;
   margin-top: 50px;
@@ -678,6 +776,12 @@ li h5 span {
 @media (max-width: 780px) {
   #mySkillsTitle {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  #mySkillsTitle {
+    font-size: 30px;
   }
 }
 
@@ -701,33 +805,41 @@ li h5 span {
   padding: 20px;
 }
 
-/*@media (max-width: 467px) {
+@media (max-width: 400px) {
   .eachSkill {
-    width: 210px;
+    width: 120px;
   }
-}*/
+}
+
+@media (max-width: 361px) {
+  .eachSkill {
+    padding: 10px;
+    width: 110px;
+  }
+}
 
 #skillIcons {
   color: #fff;
   font-size: 110px;
   margin-bottom: 2px;
 }
-/*@media (max-width: 467px) {
+
+@media (max-width: 400px) {
   #skillIcons {
-    font-size: 160px;
+    font-size: 90px;
   }
-}*/
+}
 
 .skillNames {
   color: #fff;
   font-size: 18px;
 }
-/*
-@media (max-width: 467px) {
+
+@media (max-width: 400px) {
   .skillNames {
-    font-size: 25px;
+    font-size: 16px;
   }
-}*/
+}
 
 .endorsementsContainer {
   display: flex;
@@ -752,8 +864,8 @@ li h5 span {
 }
 
 #endorsementsTitle {
-  width: inherit;
-  height: 100px;
+  width: 100vw;
+  height: auto;
   font-family: 'Lato', sans-serif;
   font-size: 64px;
   color: #fff;
@@ -769,9 +881,15 @@ li h5 span {
   }
 }
 
+@media (max-width: 400px) {
+  #endorsementsTitle {
+    font-size: 30px;
+  }
+}
+
 .endorsements {
   width: 100%;
-  height: 300px;
+  height: 350px;
   margin-top: 40px;
   display: flex;
 }
@@ -782,6 +900,7 @@ li h5 span {
     height: auto;
   }
 }
+
 
 .endorsementComment {
   width: 100%;
@@ -794,8 +913,6 @@ li h5 span {
 }
 
 .endorsePicture {
-  /*height: 125px;
-  width: 125px;*/
   border: 6px solid #9AD1CE;
 }
 
@@ -811,6 +928,12 @@ li h5 span {
   color: #fff;
 }
 
+@media (max-width: 400px) {
+  .aboutEndorser {
+    font-size: 16px;
+  }
+}
+
 .endorsementendorsement {
   font-weight: bold;
   font-size: 18px;
@@ -823,6 +946,12 @@ li h5 span {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 400px) {
+  .endorsementendorsement {
+    font-size: 16px;
+  }
 }
 
 #portfolio {
@@ -851,8 +980,8 @@ li h5 span {
 
 .portfolioTitle {
   margin-top: 50px;
-  width: 100%;
-  height: 100px;
+  width: 100vw;
+  height: auto;
   font-family: 'Lato', sans-serif;
   font-size: 64px;
   border-left: 8px solid #9D9B95;
@@ -862,6 +991,12 @@ li h5 span {
 @media (max-width: 780px) {
   .portfolioTitle {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolioTitle {
+    font-size: 30px;
   }
 }
 
@@ -885,6 +1020,48 @@ li h5 span {
 .portfolioItem img {
   height: 100%;
   width:  100%;
+}
+
+@media (max-width: 440px) {
+  .portfolioItem {
+    height: 200px;
+    width: 359px;
+  }
+}
+
+@media (max-width: 410px) {
+  .portfolioItem {
+    height: 180px;
+    width: 339px;
+  }
+}
+
+@media (max-width: 385px) {
+  .portfolioItem {
+    height: 160px;
+    width: 319px;
+  }
+}
+
+@media (max-width: 365px) {
+  .portfolioItem {
+    height: 140px;
+    width: 269px;
+  }
+}
+
+@media (max-width: 340px) {
+  .portfolioItem {
+    height: 170px;
+    width: 259px;
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolioItem {
+    height: 150px;
+    width: 249px;
+  }
 }
 
 .contactContainer {
@@ -912,8 +1089,8 @@ li h5 span {
 
 #contactTitle {
   margin-top: 50px;
-  width: 100%;
-  height: 100px;
+  width: 100vw;
+  height: auto;
   font-family: 'Lato', sans-serif;
   font-size: 64px;
   color: #fff;
@@ -925,6 +1102,12 @@ li h5 span {
 @media (max-width: 780px) {
   #contactTitle {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  #contactTitle {
+    font-size: 30px;
   }
 }
 
