@@ -1336,7 +1336,7 @@ li h5 span {
 
 .contactSection {
   width: 90vw;
-  height: inherit;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
