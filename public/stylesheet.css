@@ -1398,8 +1398,6 @@ li h5 span {
 }
 
 #contactInput {
-  /*overflow-y: auto;
-  overflow-x: hidden;*/
   height: 100%;
   width: 60vw;
   display: -webkit-box;
@@ -1416,7 +1414,7 @@ li h5 span {
 @media (max-width: 875px) {
   #contactInput {
     width: 90vw;
-    height: 50vh;
+    /*height: 50vh;*/
   }
 }
 
