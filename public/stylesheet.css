@@ -1122,7 +1122,7 @@ li h5 span {
 
 .portfolioContainer {
   background-color: #F9F5EA;
-  height: auto;
+  height: 800px;
   overflow-y: hidden;
   width: 100%;
   display: -webkit-box;
@@ -1321,9 +1321,7 @@ li h5 span {
                      rgba(53,164,157, .5)),
                      url("./assets/map.png") no-repeat center center fixed;
   background-size: cover;
-  /*height: 650px;*/
-  height: auto;
-  overflow-y: hidden;
+  height: 650px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
