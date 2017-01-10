@@ -797,6 +797,12 @@ li h5 span {
   justify-content: center;
 }
 
+@media (max-width: 1200px) {
+  .mySkillsContainer {
+    height: 700px;
+  }
+}
+
 @media (max-width: 999px) {
   .mySkillsContainer {
     height: 750px;
@@ -809,21 +815,21 @@ li h5 span {
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 597px) {
   .mySkillsContainer {
-    height: 1100px;
+    height: 1175px;
   }
 }
 
 @media (max-width: 400px) {
   .mySkillsContainer {
-    height: 1000px;
+    height: 1050px;
   }
 }
 
 @media (max-width: 361px) {
   .mySkillsContainer {
-    height: 910px;
+    height: 930px;
   }
 }
 
@@ -912,6 +918,7 @@ li h5 span {
 .skillNames {
   color: #fff;
   font-size: 18px;
+  font-family: 'Lato', sans-serif;
 }
 
 @media (max-width: 400px) {
@@ -955,7 +962,6 @@ li h5 span {
   padding-left: 20px;
   margin-top: 50px;
   visibility: hidden;
-  border: 1px solid pink;
 }
 
 @media (max-width: 780px) {
@@ -1124,7 +1130,44 @@ li h5 span {
   height: 221px;
   width: 379px;
   margin: 5px;
+  position: relative;
 }
+
+.portfolioItem:hover .portfolioLink {
+  visibility: visible;
+  background: linear-gradient(rgba(53,164,157, .4), rgba(53,164,157, .4));
+}
+
+.portfolioLink {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.portfolioLink a {
+  border: 2px solid white;
+  padding: 30px 60px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(rgba(53,164,157, .9), rgba(53,164,157, .9));
+}
+
+@media (max-width: 500px) {
+  .portfolioLink a {
+    padding: 20px 50px;
+    margin-bottom: 5px;
+  }
+}
+
 
 .portfolioItem img {
   height: 100%;
