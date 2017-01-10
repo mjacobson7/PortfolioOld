@@ -1321,7 +1321,9 @@ li h5 span {
                      rgba(53,164,157, .5)),
                      url("./assets/map.png") no-repeat center center fixed;
   background-size: cover;
-  height: 650px;
+  /*height: 650px;*/
+  height: auto;
+  overflow-y: hidden;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1398,7 +1400,6 @@ li h5 span {
 }
 
 #contactInput {
-  /*height: 100%;*/
   overflow-y: auto;
   overflow-x: hidden;
   width: 60vw;
@@ -1416,7 +1417,7 @@ li h5 span {
 @media (max-width: 875px) {
   #contactInput {
     width: 90vw;
-    height: 100vh;
+    height: 50vh;
   }
 }
 
