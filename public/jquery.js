@@ -13,11 +13,8 @@ angular.module('myPortfolio')
        });
 
         $(window).bind('scroll', function() {
-          if($(window).width() <= 966) {
-            var navHeight = $( window ).height() - 290;
-          } else {
-            var navHeight = $( window ).height() - 74;
-          }
+
+          var navHeight = document.body.clientHeight - $('.navBar').height() - $('#about').height() - $('#myresume').height() - $('#myskills').height() - $('#endorsements').height() - $('#portfolio').height() - $('#contact').height() - $('.footer').height();
 
       			 if ($(window).scrollTop() > navHeight) {
       				 $('.navBar').addClass('fixed');

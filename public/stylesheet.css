@@ -4,8 +4,6 @@ html body {
 }
 
 .homeContainer {
-  height: 100%;
-  width: 100%;
   overflow-x: hidden;
 }
 
@@ -342,8 +340,6 @@ html body {
   height: inherit;
 }
 
-
-
 #aboutMeTitle {
   width: 100vw;
   height: auto;
@@ -578,8 +574,6 @@ li h5 span {
 }
 
 .myResumeContainer {
-  /*height: 1150px;*/
-  /*width: 100%;*/
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #F9F5EA;
@@ -590,108 +584,6 @@ li h5 span {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-/*@media (max-width: 1350px) {
-  .myResumeContainer {
-    height: 1250px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .myResumeContainer {
-    height: 1400px;
-  }
-}
-
-@media (max-width: 800px) {
-  .myResumeContainer {
-    height: 1700px;
-  }
-}
-
-@media (max-width: 781px) {
-  .myResumeContainer {
-    height: 1600px;
-  }
-}
-
-@media (max-width: 700px) {
-  .myResumeContainer {
-    height: 1750px;
-  }
-}
-
-@media (max-width: 605px) {
-  .myResumeContainer {
-    height: 1775px;
-  }
-}
-
-@media (max-width: 600px) {
-  .myResumeContainer {
-    height: 1800px;
-  }
-}
-
-@media (max-width: 505px) {
-  .myResumeContainer {
-    height: 1850px;
-  }
-}
-
-@media (max-width: 498px) {
-  .myResumeContainer {
-    height: 1900px;
-  }
-}
-
-@media (max-width: 468px) {
-  .myResumeContainer {
-    height: 1950px;
-  }
-}
-
-@media (max-width: 440px) {
-  .myResumeContainer {
-    height: 2000px;
-  }
-}
-
-@media (max-width: 399px) {
-  .myResumeContainer {
-    height: 2050px;
-  }
-}
-
-@media (max-width: 377px) {
-  .myResumeContainer {
-    height: 2075px;
-  }
-}
-
-@media (max-width: 361px) {
-  .myResumeContainer {
-    height: 2150px;
-  }
-}
-
-@media (max-width: 345px) {
-  .myResumeContainer {
-    height: 2200px;
-  }
-}
-
-@media (max-width: 335px) {
-  .myResumeContainer {
-    height: 2250px;
-  }
-}
-
-@media (max-width: 321px) {
-  .myResumeContainer {
-    height: 2300px;
-  }
-}*/
 
 .myResumeSection {
   width: 90vw;
@@ -907,9 +799,7 @@ li h5 span {
 
 .mySkillsContainer {
   background-color: #3F3F3F;
-  /*height: 585px;*/
-  height: auto;
-  overflow-y: hidden;
+  height: 585px;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1710,4 +1600,90 @@ li h5 span {
 .help-block {
   color: #cc2626;
   font-family: 'Lato', sans-serif;
+}
+
+/*ANIMATIONS*/
+
+.slideLeft{
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(150%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slideLeft {
+	0% {
+		-webkit-transform: translateX(150%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0.0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
