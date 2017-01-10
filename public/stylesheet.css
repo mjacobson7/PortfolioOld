@@ -907,7 +907,9 @@ li h5 span {
 
 .mySkillsContainer {
   background-color: #3F3F3F;
-  height: 585px;
+  /*height: 585px;*/
+  height: auto;
+  overflow-y: hidden;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1073,7 +1075,6 @@ li h5 span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*height: 550px;*/
   width: 100vw;
   height: auto;
   overflow-y: hidden;
@@ -1231,7 +1232,8 @@ li h5 span {
 
 .portfolioContainer {
   background-color: #F9F5EA;
-  height: 800px;
+  height: auto;
+  overflow-y: hidden;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
