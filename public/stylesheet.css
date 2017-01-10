@@ -1073,8 +1073,10 @@ li h5 span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 550px;
+  /*height: 550px;*/
   width: 100vw;
+  height: auto;
+  overflow-y: hidden;
   background: -webkit-linear-gradient(
                      rgba(53,164,157, .8),
                      rgba(53,164,157, .8)),
