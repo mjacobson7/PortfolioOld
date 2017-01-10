@@ -1094,7 +1094,7 @@ li h5 span {
 }
 
 .endorsementsSection {
-  height: 100%;
+  height: inherit;
   width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1109,7 +1109,7 @@ li h5 span {
 }
 
 #endorsementsTitle {
-  width: 100vw;
+  width: 90vw;
   height: auto;
   font-family: 'Lato', sans-serif;
   font-size: 64px;
