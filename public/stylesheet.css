@@ -1323,7 +1323,7 @@ li h5 span {
   background-size: cover;
   background-attachment: scroll;
   height: 650px;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1336,7 +1336,7 @@ li h5 span {
 }
 
 .contactSection {
-  width: 90vw;
+  width: 90%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1401,7 +1401,7 @@ li h5 span {
 
 #contactInput {
   height: 100%;
-  width: 60vw;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1487,9 +1487,8 @@ li h5 span {
 
 @media (max-width: 875px) {
   .sendButton {
-    width: 90vw;
+    width: 100%;
     margin-top: 10px;
-    /*height: 180px;*/
   }
 }
 
