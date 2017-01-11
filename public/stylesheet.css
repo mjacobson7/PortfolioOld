@@ -1321,7 +1321,7 @@ li h5 span {
                      rgba(53,164,157, .5)),
                      url("./assets/map.png") no-repeat center center fixed;
   background-size: cover;
-  height: 650px;
+  /*height: 650px;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1440,11 +1440,11 @@ li h5 span {
   margin-top: 10px;
 }
 
-@media (max-width: 875px) {
+/*@media (max-width: 875px) {
   .contactArea {
     height: 300px;
   }
-}
+}*/
 
 .contactForm::-webkit-input-placeholder {
     color: #fff;
@@ -1462,7 +1462,7 @@ li h5 span {
 
 .sendButton {
   width: 146px;
-  min-height: 62px;
+  height: 62px;
   background-color: #ffe89c;
   border-radius: 5px;
   display: -webkit-box;
@@ -1477,7 +1477,7 @@ li h5 span {
   font-weight: bolder;
   font-size: 20px;
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   border: none;
@@ -1487,7 +1487,7 @@ li h5 span {
   .sendButton {
     width: 90vw;
     margin-top: 10px;
-    height: 180px;
+    /*height: 180px;*/
   }
 }
 
