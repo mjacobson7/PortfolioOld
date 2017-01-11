@@ -1321,9 +1321,9 @@ li h5 span {
                      rgba(53,164,157, .5)),
                      url("./assets/map.png") no-repeat center center fixed;
   background-size: cover;
+  background-attachment: scroll;
   height: 650px;
   width: 100vw;
-  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
