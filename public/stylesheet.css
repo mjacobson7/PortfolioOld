@@ -1423,7 +1423,7 @@ li h5 span {
 
 .contactForm {
   max-width: 850px;
-  height: 60px;
+  min-height: 40px;
   text-decoration: none;
   border: 2px solid #ffe89c;
   border-radius: 5px;
@@ -1432,17 +1432,11 @@ li h5 span {
   margin-top: 10px;
 }
 
-/*@media (max-width: 875px) {
-  .contactForm {
-    height: 160px;
-  }
-}*/
-
 .contactArea {
   background: transparent;
   border: 2px solid #ffe89c;
   max-width: 850px;
-  max-height: 120px;
+  min-height: 130px;
   border-radius: 5px;
   text-decoration: none;
   outline: none;
@@ -1472,8 +1466,9 @@ li h5 span {
 
 .sendButton {
   width: 146px;
-  height: 62px;
+  min-height: 62px;
   background-color: #ffe89c;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
