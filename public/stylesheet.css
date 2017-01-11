@@ -1322,7 +1322,6 @@ li h5 span {
                      url("./assets/map.png") no-repeat center center fixed;
   background-size: cover;
   height: 650px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1332,11 +1331,12 @@ li h5 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          border: 1px solid red;
 }
 
 .contactSection {
   width: 90vw;
-  height: inherit;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1344,18 +1344,20 @@ li h5 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+          border: 1px solid blue;
 }
 
 #contactTitle {
   margin-top: 50px;
-  width: 100vw;
   height: auto;
+  display: inline;
   font-family: 'Lato', sans-serif;
   font-size: 64px;
   color: #fff;
   border-left: 8px solid #B8D4DB;
   padding-left: 20px;
   visibility: hidden;
+  border: 1px solid pink;
 }
 
 @media (max-width: 780px) {
@@ -1381,6 +1383,7 @@ li h5 span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          border: 1px solid green;
 }
 
 @media (max-width: 875px) {
@@ -1408,6 +1411,7 @@ li h5 span {
       -ms-flex-direction: column;
           flex-direction: column;
   visibility: hidden;
+  border: 1px solid orange;
 
 }
 
