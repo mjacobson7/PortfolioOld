@@ -1137,6 +1137,18 @@ li h5 span {
           justify-content: center;
 }
 
+@media (max-width: 1000px) {
+  .endorsementendorsement {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .endorsementendorsement {
+    min-width: 100%;
+  }
+}
+
 @media (max-width: 400px) {
   .endorsementendorsement {
     font-size: 16px;
