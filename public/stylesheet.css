@@ -1322,6 +1322,9 @@ li h5 span {
                      url("./assets/map.png") no-repeat center center fixed;
   background-size: cover;
   /*height: 650px;*/
+  width: 100vw;
+  height: auto;
+  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
