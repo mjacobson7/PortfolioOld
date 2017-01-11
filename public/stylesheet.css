@@ -1000,7 +1000,7 @@ li h5 span {
 }
 
 #endorsementsTitle {
-  width: 80vw;
+  width: 100%;
   height: auto;
   font-family: 'Lato', sans-serif;
   font-size: 64px;
@@ -1046,8 +1046,8 @@ li h5 span {
 
 
 .endorsementComment {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1059,6 +1059,7 @@ li h5 span {
   visibility: hidden;
   margin-bottom: 20px;
 }
+
 
 
 .endorsePicture {
@@ -1094,8 +1095,9 @@ li h5 span {
   font-size: 18px;
   /*height: 120px;*/
   overflow-y: auto;
-  width: 90%;
+  width: 80%;
   border: 2px solid #FFE89C;
+  font-family: 'Lato', sans-serif;
   color: #fff;
   padding: 15px;
   margin-top: 5px;
@@ -1134,36 +1136,6 @@ li h5 span {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-/*@media (max-width: 865px) {
-  .portfolioContainer {
-    height: 950px;
-  }
-}
-
-@media (max-width: 440px) {
-  .portfolioContainer {
-    height: 850px;
-  }
-}
-
-@media (max-width: 403px) {
-  .portfolioContainer {
-    height: 800px;
-  }
-}
-
-@media (max-width: 387px) {
-  .portfolioContainer {
-    height: 725px;
-  }
-}
-
-@media (max-width: 368px) {
-  .portfolioContainer {
-    height: 700px;
-  }
-}*/
 
 .portfolioSection {
   width: 90vw;
@@ -1247,7 +1219,7 @@ li h5 span {
 
 .portfolioLink a {
   border: 2px solid white;
-  padding: 30px 60px;
+  padding: 15px 20px;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   text-decoration: none;
@@ -1258,7 +1230,7 @@ li h5 span {
 
 @media (max-width: 500px) {
   .portfolioLink a {
-    padding: 20px 50px;
+    padding: 10px 15px;
     margin-bottom: 5px;
   }
 }
@@ -1442,12 +1414,6 @@ li h5 span {
   margin-top: 10px;
 }
 
-/*@media (max-width: 875px) {
-  .contactArea {
-    height: 300px;
-  }
-}*/
-
 .contactForm::-webkit-input-placeholder {
     color: #fff;
 }
@@ -1483,7 +1449,6 @@ li h5 span {
   -ms-flex-item-align: end;
       align-self: flex-end;
   border: none;
-  text-align: center;
 }
 
 @media (max-width: 875px) {
@@ -1591,6 +1556,7 @@ li h5 span {
 .reserved {
   color: #fff;
   font-size: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 .help-block {
@@ -1615,10 +1581,12 @@ li h5 span {
 
 @keyframes slideLeft {
 	0% {
-		transform: translateX(150%);
+		-webkit-transform: translateX(150%);
+		        transform: translateX(150%);
 	}
 	100% {
-		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
 	}
 }
 
@@ -1646,10 +1614,12 @@ li h5 span {
 
 @keyframes slideRight {
 	0% {
-		transform: translateX(-150%);
+		-webkit-transform: translateX(-150%);
+		        transform: translateX(-150%);
 	}
 	100% {
-		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
 	}
 }
 
@@ -1673,6 +1643,15 @@ li h5 span {
 	-webkit-animation-timing-function: ease-in-out;
 
 	visibility: visible !important;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0.0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes fadeIn {
