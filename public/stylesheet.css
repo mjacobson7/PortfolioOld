@@ -679,6 +679,7 @@ li h5 span {
 @media (max-width: 800px) {
   .educationDate {
     border-right: none;
+    width: 80vw;
   }
 }
 
@@ -694,7 +695,7 @@ li h5 span {
 
 .dateBox {
   height: 70px;
-  min-width: 200px;
+  width: 180px;
   padding: 12px;
   border-radius: 5px;
   background-color: #FFE89C;
@@ -714,6 +715,7 @@ li h5 span {
 @media (max-width: 800px) {
   .dateBox {
     margin-top: 20px;
+    height: 40px;
   }
 }
 
@@ -1045,7 +1047,9 @@ li h5 span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-            justify-content: flex-start;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
   }
 }
 
@@ -1161,7 +1165,6 @@ li h5 span {
 
 .portfolioContainer {
   background-color: #F9F5EA;
-  /*height: 800px;*/
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1467,7 +1470,7 @@ li h5 span {
 
 .sendButton {
   width: 146px;
-  height: 62px;
+  min-height: 62px;
   background-color: #ffe89c;
   border-radius: 5px;
   display: -webkit-box;
