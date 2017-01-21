@@ -1413,7 +1413,7 @@ li h5 span {
 
 #contactInput {
   height: 100%;
-  width: 60%;
+  width: 850px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1422,7 +1422,12 @@ li h5 span {
       -ms-flex-direction: column;
           flex-direction: column;
   visibility: hidden;
+}
 
+@media (max-width: 970px) {
+  #contactInput {
+    width: 600px;
+  }
 }
 
 @media (max-width: 875px) {
@@ -1539,16 +1544,15 @@ li h5 span {
   }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1300px) {
   #contactMe {
-    width: 22vw;
-    height: 44vh;
+    width: 28vw;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1100px) {
   #contactMe {
-    width: 24vw;
+    min-width: 25vw;
   }
 }
 
@@ -1560,7 +1564,7 @@ li h5 span {
 }
 
 .myInformation {
-  width: 100%;
+  width: 90%;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1572,10 +1576,23 @@ li h5 span {
   font-size: 18px;
 }
 
+@media (max-width: 950px) {
+  .myInformation {
+    font-size: 16px;
+  }
+}
+
 .myInformation i {
   color: #ffe89c;
   margin-left: 20px;
   margin-right: 10px;
+}
+
+@media (max-width: 950px) {
+  .myInformation i {
+    margin-left: 5px;
+
+  }
 }
 
 .footer {
