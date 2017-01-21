@@ -375,7 +375,6 @@ html body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-          border: 1px solid red;
 }
 
 @media (max-width: 1000px) {
@@ -386,6 +385,7 @@ html body {
             flex-direction: column;
   }
 }
+
 
 #profilePicture {
   border: 8px solid #9AD1CE;
@@ -405,7 +405,6 @@ html body {
   margin-left: 30px;
   color: #fff;
   visibility: hidden;
-  border: 1px solid blue;
 }
 
 @media (max-width: 1000px) {
@@ -421,7 +420,6 @@ html body {
   font-size: 20px;
   max-height: inherit;
   max-width: inherit;
-  border: 1px solid yellow;
 }
 
 @media (max-width: 1300px) {
@@ -449,7 +447,6 @@ html body {
   font-size: 15px;
   font-weight: 400;
   margin-top: 10px;
-  border: 1px solid orange;
 }
 
 @media (max-width: 1100px) {
@@ -474,7 +471,6 @@ html body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-          border: 1px solid brown;
 }
 
 @media (max-width: 780px) {
@@ -977,10 +973,12 @@ li h5 span {
                      rgba(53,164,157, .8),
                      rgba(53,164,157, .8)),
                      url("./assets/city.jpg") no-repeat center center fixed;
+                     background-size: cover;
   background: linear-gradient(
                      rgba(53,164,157, .8),
                      rgba(53,164,157, .8)),
                      url("./assets/city.jpg") no-repeat center center fixed;
+                     background-size: cover;
 }
 
 @media (max-width: 1000px) {
@@ -1518,10 +1516,10 @@ li h5 span {
 
 #contactMe {
   background-color: rgba(63,63,63,0.5);
-  height: 40vh;
-  width: 20vw;
+  height: 300px;
+  width: 25vw;
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1530,6 +1528,12 @@ li h5 span {
       -ms-flex-direction: column;
           flex-direction: column;
   visibility: hidden;
+}
+
+@media (min-width: 1400px) {
+  #contactMe {
+    width: 300px;
+  }
 }
 
 #contactMe div {
@@ -1551,13 +1555,13 @@ li h5 span {
 
 @media (max-width: 1300px) {
   #contactMe {
-    width: 28vw;
+    width: 30vw;
   }
 }
 
 @media (max-width: 1100px) {
   #contactMe {
-    min-width: 25vw;
+    min-width: 30vw;
   }
 }
 
