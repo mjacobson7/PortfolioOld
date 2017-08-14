@@ -800,7 +800,7 @@ li h5 span {
 
 .mySkillsContainer {
   background-color: #3F3F3F;
-  height: 585px;
+  height: 700px;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -818,37 +818,37 @@ li h5 span {
 
 @media (max-width: 999px) {
   .mySkillsContainer {
-    height: 750px;
+    height: 900px;
   }
 }
 
 @media (max-width: 799px) {
   .mySkillsContainer {
-    height: 900px;
+    height: 1100px;
   }
 }
 
 @media (max-width: 599px) {
   .mySkillsContainer {
-    height: 1175px;
+    height: 1600px;
   }
 }
 
 @media (max-width: 400px) {
   .mySkillsContainer {
-    height: 1050px;
+    height: 1400px;
   }
 }
 
 @media (max-width: 361px) {
   .mySkillsContainer {
-    height: 930px;
+    height: 1200px;
   }
 }
 
 @media (max-width: 320px) {
   .mySkillsContainer {
-    height: 920px;
+    height: 1200px;
   }
 }
 
