@@ -1,356 +1,440 @@
 <!DOCTYPE html>
 <html ng-app="myPortfolio">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Web Developer | Angular, Node, Javascript, HTML/CSS | My passion is full-stack web development. I care as much about the aesthetic of a page as the integrity of the code that's used to build it. I'm a problem solver who finds fulfillment in flawless creative execution and a critical thinker whose suggestions and solutions are built on consideration and understanding.">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Max Jacobson Portfolio</title>
-    <link rel="icon" href="./assets/js.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100|Lato:100,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.3.0/sweetalert2.min.css">
-  </head>
-  <body jquery-directive ng-controller="mainController">
 
-    <div id="home" class="homeContainer">
-        <div class="backgroundImage">
-          <div class="homeLogo">
-            <div class="homeName">MAX JACOBSON</div>
-            <div class="homeTagline">WEB DEVELOPER</div>
-          </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Web Developer | Angular, Node, Javascript, HTML/CSS | My passion is full-stack web development. I care as much about the aesthetic of a page as the integrity of the code that's used to build it. I'm a problem solver who finds fulfillment in flawless creative execution and a critical thinker whose suggestions and solutions are built on consideration and understanding.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Max Jacobson Portfolio</title>
+  <link rel="icon" href="./assets/js.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100|Lato:100,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.3.0/sweetalert2.min.css">
+</head>
 
-        <div class="nav-wrapper">
-          <div class="navBar">
-            <ul>
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#myresume">MY RESUME</a></li>
-              <li><a href="#myskills">MY SKILLS</a></li>
-              <li><a href="#endorsements">ENDORSEMENTS</a></li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
-          </div>
-        </div>
+<body jquery-directive ng-controller="mainController">
 
-        <div class="mobileNav">
-          <select id="select-anchor">
-            <option>NAVIGATE TO...</option>
-            <option value="#home">HOME</option>
-            <option value="#about">ABOUT</option>
-            <option value="#myresume">MY RESUME</option>
-            <option value="#myskills">MY SKILLS</option>
-            <option value="#endorsements">ENDORSEMENTS</option>
-            <option value="#portfolio">PORTFOLIO</option>
-            <option value="#contact">CONTACT</option>
-          </select>
-        </div>
-
-          <div id="about" class="aboutMeContainer">
-            <div class="aboutMeSection">
-              <div id="aboutMeTitle">ABOUT ME</div>
-              <div class="aboutMeMain">
-                <div class="profilePictureContainer">
-                  <img src="./assets/profile.jpg" alt="" id="profilePicture">
-                </div>
-                <div id="profileDescription">
-                  <div class="profileParagraph">
-                    You know how people binge-watch netflix? I binge-read Angular and Node docs.  When I'm not spending my free time with my family, I am catching up on the latest technologies and improving my craft. I set challenging goals for myself including solving complex javascript problems on a daily basis, adding new content to my portfolio, and learning new and exciting technologies. I'm always eager to learn more, and I crave knowledge. I value developing and maintaining relationships and going above and beyond the expectations for clients, co-workers and teammates. I pay attention to the details, work well in both team and individual settings, and can get things done. I strive to be happy and enjoy what I'm doing, but I'm always looking for ways to improve myself or to improve what I'm working on.
-                  </div>
-                  <div id="paragraphDetails">
-                    <ul>
-                      <li><h5>RESIDENCE</br><span>Provo, Utah Area<span></h5></li>
-                      <li><h5>EMAIL</br><span>mjacobson7@gmail.com</span></h5></li>
-                      <li><h5>BRAGGING RIGHTS</br><span>Once solved a Rubik's Cube in 47 Seconds</span></h5></li>
-                    </ul>
-                    <a href="./assets/resume.pdf" download class="downloadResume">
-                      <p><i class="material-icons">file_download</i>DOWNLOAD RESUME</p>
-                    </a>
-                </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="myresume" class="myResumeContainer">
-            <div class="myResumeSection">
-              <div id="myResumeTitle" class="myResumeTitle">MY RESUME</div>
-              <div id="educationTitle2" class="educationTitle">WORK EXPERIENCE</div>
-              <div id="myResumeWorkExperience">
-                <div id="work1" class="education">
-                  <div class="educationDate">
-                    <div class="dateBox">NOVEMBER 2016 - PRESENT</div>
-                  </div>
-                  <div class="educationName">
-                    <div class="dot"></div>
-                    <div class="collegeParagraph">
-                      <div class="collegeTitle">FREELANCE WEB DEVELOPER</div>
-                      <div class="collegeDescription">
-                        My passion is full-stack web development. I'm highly adept at conveying complex technical information to a variety of professional and lay audiences in a clear and understandable manner.  I care as much about the aesthetic of a page as the integrity of the code that's used to build it. I'm a problem solver who finds fulfillment in flawless creative execution and a critical thinker whose suggestions and solutions are built on consideration and understanding. I use the latest web technologies and tools to make beautiful, responsive websites. I'd love to help you on your next project.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="work2" class="education">
-                  <div class="educationDate">
-                    <div class="dateBox">DECEMBER 2015 - PRESENT</div>
-                  </div>
-                  <div class="educationName">
-                    <div class="dot"></div>
-                    <div class="collegeParagraph">
-                      <div class="collegeTitle">TORCH LMS</div>
-                      <div class="collegeDescription">
-                          Working at an up-and-coming software company has allowed me to develop many skills and wear many hats. Submitted hundreds of code commits resulting in a better user experience and reduction in bug-related tickets by 53% over one-year time period. Proficiency in testing web-based systems to identify any performance and quality issues as well as bug tracking. Evaluated new software applications and coordinated with team to address any defects as well as discuss QA concerns. Committed to ensuring that quality standards are upheld to promote optimal customer satisfaction. Facilitated Single-Sign-On and SFTP integrations with clients and ensured a smooth, well-documented implementation.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="work3" class="education">
-                  <div class="educationDate">
-                    <div class="dateBox">JANUARY 2015 - DECEMBER 2015</div>
-                  </div>
-                  <div class="educationName">
-                    <div class="dot"></div>
-                    <div class="collegeParagraph">
-                      <div class="collegeTitle">SERVER PLUS</div>
-                      <div class="collegeDescription">
-                        Customer-focused Desktop Support Technician with success in a variety of computer operating systems, applications, and hardware. Analytical and adept at resolving complex network issues. Critical thinker who addresses customer support issues quickly and who consistently exceeds performance standards. Responsibilities include: Install, configure, test, maintain, monitor, and troubleshoot end user and network hardware, peripheral devices, printing/scanning devices, and mobile devices using a ticketing system.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="myResumeEducation">
-                <div id="educationTitle1" class="educationTitle">EDUCATION</div>
-                <div id="education1" class="education">
-                  <div class="educationDate">
-                    <div class="dateBox">APRIL 2016 - AUGUST 2016</div>
-                  </div>
-                  <div class="educationName">
-                    <div class="dot"></div>
-                    <div class="collegeParagraph">
-                      <div class="collegeTitle">DEV MOUNTAIN</div>
-                      <div class="collegeDescription">
-                        Learning and building fully responsive, interactive websites that are industry standards using HTML5, CSS3, Javascript, AngularJS, React, NodeJS, ExpressJS, and MongoDB.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="education2" class="education">
-                  <div class="educationDate">
-                    <div class="dateBox">2006, and 2009-2010</div>
-                  </div>
-                  <div class="educationName">
-                    <div class="dot"></div>
-                    <div class="collegeParagraph">
-                      <div class="collegeTitle">UTAH VALLEY UNIVERSITY</div>
-                      <div class="collegeDescription">
-                        Completed 30 credits towards a bachelor's degree in Computer Science
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              </div>
-            </div>
-
-            <div id="myskills" class="mySkillsContainer">
-              <div class="mySkillsSection">
-                <div id="mySkillsTitle">MY SKILLS</div>
-
-                <div id="mySkillsSkills">
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-angularjs-plain"></i>
-                    <p class="skillNames">ANGULAR</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-react-original"></i>
-                    <p class="skillNames">REACT</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-javascript-plain"></i>
-                    <p class="skillNames">JAVASCRIPT</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-nodejs-plain"></i>
-                    <p class="skillNames">NODE JS</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-mongodb-plain"></i>
-                    <p class="skillNames">MONGO DB</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-postgresql-plain"></i>
-                    <p class="skillNames">POSTGRESQL</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-jquery-plain"></i>
-                    <p class="skillNames">JQUERY</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-html5-plain"></i>
-                    <p class="skillNames">HTML5</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-css3-plain"></i>
-                    <p class="skillNames">CSS3</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-sass-original"></i>
-                    <p class="skillNames">SASS</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-less-plain-wordmark"></i>
-                    <p class="skillNames">LESS</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-github-plain"></i>
-                    <p class="skillNames">GITHUB</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-git-plain"></i>
-                    <p class="skillNames">GIT</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-bootstrap-plain"></i>
-                    <p class="skillNames">BOOTSTRAP</p>
-                  </div>
-                  <div class="eachSkill">
-                    <i id="skillIcons" class="devicon-java-plain"></i>
-                    <p class="skillNames">JAVA</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="endorsements" class="endorsementsContainer">
-                <div class="endorsementsSection">
-                  <div id="endorsementsTitle">ENDORSEMENTS</div>
-                  <div class="endorsements">
-                    <div id=endorsement1 class="endorsementComment">
-                      <img src="./assets/jakeWhite.jpg" class="endorsePicture" alt="">
-                      <p class="aboutEndorser">
-                        Jake White,</br> CEO at Torch LMS
-                      </p>
-                      <div class="endorsementendorsement">
-                          Max is exceptional to work with, and gets solid results. He is a team player, he is punctual, and always willing to help out with anything that needs to be done. Max is always pushing himself to learn more and develop himself professionally.
-                      </div>
-                    </div>
-                    <div id="endorsement2" class="endorsementComment">
-                      <img src="./assets/jaronMathis.jpg" class="endorsePicture" alt="">
-                      <p class="aboutEndorser">
-                        Jaron Mathis,</br> COO at Torch LMS
-                      </p>
-                      <div class="endorsementendorsement">
-                        [Max] has shown the ability to wear many different hats, and always runs to the fire to figure out how he can add value for our clients. Specifically, Max has become an indispensable resource through his product knowledge and testing ability on our system.
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-
-            <div id="portfolio" class="portfolioContainer">
-              <div class="portfolioSection">
-                <div class="portfolioTitle">PORTFOLIO</div>
-                <div class="portfolioBody">
-
-                  <div class="portfolioItem">
-                    <div class="portfolioLink">
-                      <a href="http://gifster.maxjacobson.me" target="_blank">Visit site</a>
-                      <a href="https://github.com/mjacobson7/gifApp" target="_blank">See code</a>
-                    </div>
-                    <img src="./assets/gifster.gif" alt="">
-                  </div>
-
-                  <div class="portfolioItem">
-                    <div class="portfolioLink">
-                      <a href="http://campsite.maxjacobson.me" target="_blank">Visit site</a>
-                      <a href="https://github.com/mjacobson7/ecommerce" target="_blank">See code</a>
-                    </div>
-                    <img src="./assets/campsite.gif" alt="">
-                  </div>
-
-                  <div class="portfolioItem">
-                    <div class="portfolioLink">
-                      <a href="http://torch.maxjacobson.me" target="_blank">Visit site</a>
-                      <a href="https://github.com/mjacobson7/Torch" target="_blank">See code</a>
-                    </div>
-                    <img src="./assets/torch.gif" alt="">
-                  </div>
-
-                  <div class="portfolioItem">
-                    <div class="portfolioLink">
-                      <a href="http://paint.maxjacobson.me" target="_blank">Visit site</a>
-                      <a href="https://github.com/mjacobson7/Paint-Clone" target="_blank">See code</a>
-                    </div>
-                    <img src="./assets/paint.gif" alt="">
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-            <div id="contact" class="contactContainer">
-              <div class="contactSection">
-                <div id="contactTitle">CONTACT</div>
-                <div class="contactBody">
-                  <form id="contactInput" name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
-
-                    <input type="text" name="name" class="contactForm" placeholder="Name"  ng-model="user.name" autocomplete="off" required>
-                    <p ng-show="userForm.name.$invalid && !userForm.name.$pristine && submitted" class="help-block">Your name is required</p>
-
-                    <input class="contactForm" type="email" placeholder="Email" name="email" ng-model="user.email" autocomplete="off" required>
-                    <p ng-show="userForm.email.$invalid && !userForm.email.$pristine && submitted" class="help-block">Please enter a valid email</p>
-
-                    <textarea class="contactArea" placeholder="Message" name="message" rows="8" cols="80" ng-model="user.message" autocomplete="off" required></textarea>
-                    <p ng-show="userForm.message.$invalid && !userForm.message.$pristine && submitted" class="help-block">Please enter a message</p>
-
-                    <button type="submit" class="sendButton"><i class="material-icons">check_circle</i>SEND</button>
-
-                  </form>
-
-
-                  <div id="contactMe">
-                    <div class="myInformation"><i class="material-icons">home</i>Provo, Utah Area</div>
-                    <div class="myInformation"><i class="material-icons">phone</i>801 234 0170</div>
-                    <div class="myInformation"><i class="material-icons">email</i>mjacobson7@gmail.com</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <footer class="footer">
-              <div class="reserved">Max Jacobson © 2016</div>
-            </footer>
+  <div id="home" class="homeContainer">
+    <div class="backgroundImage">
+      <div class="homeLogo">
+        <div class="homeName">MAX JACOBSON</div>
+        <div class="homeTagline">WEB DEVELOPER</div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    <div class="nav-wrapper">
+      <div class="navBar">
+        <ul>
+          <li>
+            <a href="#home">HOME</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#myresume">MY RESUME</a>
+          </li>
+          <li>
+            <a href="#myskills">MY SKILLS</a>
+          </li>
+          <li>
+            <a href="#endorsements">ENDORSEMENTS</a>
+          </li>
+          <li>
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mobileNav">
+      <select id="select-anchor">
+        <option>NAVIGATE TO...</option>
+        <option value="#home">HOME</option>
+        <option value="#about">ABOUT</option>
+        <option value="#myresume">MY RESUME</option>
+        <option value="#myskills">MY SKILLS</option>
+        <option value="#endorsements">ENDORSEMENTS</option>
+        <option value="#portfolio">PORTFOLIO</option>
+        <option value="#contact">CONTACT</option>
+      </select>
+    </div>
+
+    <div id="about" class="aboutMeContainer">
+      <div class="aboutMeSection">
+        <div id="aboutMeTitle">ABOUT ME</div>
+        <div class="aboutMeMain">
+          <div class="profilePictureContainer">
+            <img src="./assets/profile.jpg" alt="" id="profilePicture">
+          </div>
+          <div id="profileDescription">
+            <div class="profileParagraph">
+              You know how people binge-watch netflix? I binge-read Angular and Node docs. When I'm not spending my free time with my family,
+              I am catching up on the latest technologies and improving my craft. I set challenging goals for myself including
+              solving complex javascript problems on a daily basis, adding new content to my portfolio, and learning new
+              and exciting technologies. I'm always eager to learn more, and I crave knowledge. I value developing and maintaining
+              relationships and going above and beyond the expectations for clients, co-workers and teammates. I pay attention
+              to the details, work well in both team and individual settings, and can get things done. I strive to be happy
+              and enjoy what I'm doing, but I'm always looking for ways to improve myself or to improve what I'm working
+              on.
+            </div>
+            <div id="paragraphDetails">
+              <ul>
+                <li>
+                  <h5>RESIDENCE</br>
+                    <span>Provo, Utah Area
+                      <span>
+                  </h5>
+                </li>
+                <li>
+                  <h5>EMAIL</br>
+                    <span>mjacobson7@gmail.com</span>
+                  </h5>
+                </li>
+                <li>
+                  <h5>BRAGGING RIGHTS</br>
+                    <span>Once solved a Rubik's Cube in 47 Seconds</span>
+                  </h5>
+                </li>
+              </ul>
+              <a href="./assets/max_jacobson_resume.pdf" download class="downloadResume">
+                <p>
+                  <i class="material-icons">file_download</i>DOWNLOAD RESUME</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myresume" class="myResumeContainer">
+      <div class="myResumeSection">
+        <div id="myResumeTitle" class="myResumeTitle">MY RESUME</div>
+        <div id="educationTitle2" class="educationTitle">WORK EXPERIENCE</div>
+        <div id="myResumeWorkExperience">
+
+          <div id="work1" class="education">
+            <div class="educationDate">
+              <div class="dateBox">OCTOBER 2017 - PRESENT</div>
+            </div>
+            <div class="educationName">
+              <div class="dot"></div>
+              <div class="collegeParagraph">
+                <div class="collegeTitle">TORCH LMS</div>
+                <span class="jobTitle">Software Engineer</span>
+                <div class="collegeDescription">
+                  Full stack development for a multi-tenant SaaS application with 500k+ users. Integrated the use of timezones in the site
+                  for our world-wide customer base. Responsible for a complete redesign of the user assignments page which
+                  gave users more flexibility to view tasks assigned to them. Developed a page where supervisors can view
+                  their team as well as any of their teams' direct reports. 
+                  <br><br>
+                  Technologies used: AngularJS, Java (spring), PostgreSQL, AWS
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="work2" class="education">
+            <div class="educationDate">
+              <div class="dateBox">DECEMBER 2015 - OCTOBER 2017</div>
+            </div>
+            <div class="educationName">
+              <div class="dot"></div>
+              <div class="collegeParagraph">
+                <div class="collegeTitle">TORCH LMS</div>
+                <span class="jobTitle">Technical Project Manager</span>
+                <div class="collegeDescription">
+                  Working at an up-and-coming software company has allowed me to develop many skills and wear many hats. Submitted hundreds
+                  of code commits resulting in a better user experience and reduction in bug-related tickets by 53% over
+                  one-year time period. Proficiency in testing web-based systems to identify any performance and quality
+                  issues as well as bug tracking. Evaluated new software applications and coordinated with team to address
+                  any defects as well as discuss QA concerns. Committed to ensuring that quality standards are upheld to
+                  promote optimal customer satisfaction. Facilitated Single-Sign-On and SFTP integrations with clients and
+                  ensured a smooth, well-documented implementation.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="work3" class="education">
+            <div class="educationDate">
+              <div class="dateBox">NOVEMBER 2016 - PRESENT</div>
+            </div>
+            <div class="educationName">
+              <div class="dot"></div>
+              <div class="collegeParagraph">
+                <div class="collegeTitle">FREELANCE WEB DEVELOPER</div>
+                <div class="collegeDescription">
+                  My passion is full-stack web development. I'm highly adept at conveying complex technical information to a variety of professional
+                  and lay audiences in a clear and understandable manner. I care as much about the aesthetic of a page as
+                  the integrity of the code that's used to build it. I'm a problem solver who finds fulfillment in flawless
+                  creative execution and a critical thinker whose suggestions and solutions are built on consideration and
+                  understanding. I use the latest web technologies and tools to make beautiful, responsive websites. I'd
+                  love to help you on your next project.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="work4" class="education">
+            <div class="educationDate">
+              <div class="dateBox">JANUARY 2015 - DECEMBER 2015</div>
+            </div>
+            <div class="educationName">
+              <div class="dot"></div>
+              <div class="collegeParagraph">
+                <div class="collegeTitle">SERVER PLUS</div>
+                <span class="jobTitle">Desktop Support Analyst</span>
+                <div class="collegeDescription">
+                  Customer-focused Desktop Support Technician with success in a variety of computer operating systems, applications, and hardware.
+                  Analytical and adept at resolving complex network issues. Critical thinker who addresses customer support
+                  issues quickly and who consistently exceeds performance standards. Responsibilities include: Install, configure,
+                  test, maintain, monitor, and troubleshoot end user and network hardware, peripheral devices, printing/scanning
+                  devices, and mobile devices using a ticketing system.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="myResumeEducation">
+          <div id="educationTitle1" class="educationTitle">EDUCATION</div>
+          <div id="education1" class="education">
+            <div class="educationDate">
+              <div class="dateBox">APRIL 2016 - AUGUST 2016</div>
+            </div>
+            <div class="educationName">
+              <div class="dot"></div>
+              <div class="collegeParagraph">
+                <div class="collegeTitle">DEV MOUNTAIN</div>
+                <div class="collegeDescription">
+                  Learning and building fully responsive, interactive websites that are industry standards using HTML5, CSS3, Javascript, AngularJS,
+                  React, NodeJS, ExpressJS, and MongoDB.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="education2" class="education">
+            <div class="educationDate">
+              <div class="dateBox">2006, and 2009-2010</div>
+            </div>
+            <div class="educationName">
+              <div class="dot"></div>
+              <div class="collegeParagraph">
+                <div class="collegeTitle">UTAH VALLEY UNIVERSITY</div>
+                <div class="collegeDescription">
+                  Completed 30 credits towards a bachelor's degree in Computer Science
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="myskills" class="mySkillsContainer">
+      <div class="mySkillsSection">
+        <div id="mySkillsTitle">MY SKILLS</div>
+
+        <div id="mySkillsSkills">
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-angularjs-plain"></i>
+            <p class="skillNames">ANGULAR</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-react-original"></i>
+            <p class="skillNames">REACT</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-javascript-plain"></i>
+            <p class="skillNames">JAVASCRIPT</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-nodejs-plain"></i>
+            <p class="skillNames">NODE JS</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-mongodb-plain"></i>
+            <p class="skillNames">MONGO DB</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-postgresql-plain"></i>
+            <p class="skillNames">POSTGRESQL</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-jquery-plain"></i>
+            <p class="skillNames">JQUERY</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-html5-plain"></i>
+            <p class="skillNames">HTML5</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-css3-plain"></i>
+            <p class="skillNames">CSS3</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-sass-original"></i>
+            <p class="skillNames">SASS</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-github-plain"></i>
+            <p class="skillNames">GITHUB</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-git-plain"></i>
+            <p class="skillNames">GIT</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-bootstrap-plain"></i>
+            <p class="skillNames">BOOTSTRAP</p>
+          </div>
+          <div class="eachSkill">
+            <i id="skillIcons" class="devicon-java-plain"></i>
+            <p class="skillNames">JAVA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="endorsements" class="endorsementsContainer">
+      <div class="endorsementsSection">
+        <div id="endorsementsTitle">ENDORSEMENTS</div>
+        <div class="endorsements">
+          <div id=endorsement1 class="endorsementComment">
+            <img src="./assets/jakeWhite.jpg" class="endorsePicture" alt="">
+            <p class="aboutEndorser">
+              Jake White,</br> CEO at Torch LMS
+            </p>
+            <div class="endorsementendorsement">
+              Max is exceptional to work with, and gets solid results. He is a team player, he is punctual, and always willing to help
+              out with anything that needs to be done. Max is always pushing himself to learn more and develop himself professionally.
+            </div>
+          </div>
+          <div id="endorsement2" class="endorsementComment">
+            <img src="./assets/jaronMathis.jpg" class="endorsePicture" alt="">
+            <p class="aboutEndorser">
+              Jaron Mathis,</br> COO at Torch LMS
+            </p>
+            <div class="endorsementendorsement">
+              [Max] has shown the ability to wear many different hats, and always runs to the fire to figure out how he can add value for
+              our clients. Specifically, Max has become an indispensable resource through his product knowledge and testing
+              ability on our system.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio" class="portfolioContainer">
+      <div class="portfolioSection">
+        <div class="portfolioTitle">PORTFOLIO</div>
+        <div class="portfolioBody">
+
+          <div class="portfolioItem">
+            <div class="portfolioLink">
+              <a href="http://gifster.maxjacobson.me" target="_blank">Visit site</a>
+              <a href="https://github.com/mjacobson7/gifApp" target="_blank">See code</a>
+            </div>
+            <img src="./assets/gifster.gif" alt="">
+          </div>
+
+          <div class="portfolioItem">
+            <div class="portfolioLink">
+              <a href="http://campsite.maxjacobson.me" target="_blank">Visit site</a>
+              <a href="https://github.com/mjacobson7/ecommerce" target="_blank">See code</a>
+            </div>
+            <img src="./assets/campsite.gif" alt="">
+          </div>
+
+          <div class="portfolioItem">
+            <div class="portfolioLink">
+              <a href="http://torch.maxjacobson.me" target="_blank">Visit site</a>
+              <a href="https://github.com/mjacobson7/Torch" target="_blank">See code</a>
+            </div>
+            <img src="./assets/torch.gif" alt="">
+          </div>
+
+          <div class="portfolioItem">
+            <div class="portfolioLink">
+              <a href="http://paint.maxjacobson.me" target="_blank">Visit site</a>
+              <a href="https://github.com/mjacobson7/Paint-Clone" target="_blank">See code</a>
+            </div>
+            <img src="./assets/paint.gif" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contactContainer">
+      <div class="contactSection">
+        <div id="contactTitle">CONTACT</div>
+        <div class="contactBody">
+          <form id="contactInput" name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+
+            <input type="text" name="name" class="contactForm" placeholder="Name" ng-model="user.name" autocomplete="off" required>
+            <p ng-show="userForm.name.$invalid && !userForm.name.$pristine && submitted" class="help-block">Your name is required</p>
+
+            <input class="contactForm" type="email" placeholder="Email" name="email" ng-model="user.email" autocomplete="off" required>
+            <p ng-show="userForm.email.$invalid && !userForm.email.$pristine && submitted" class="help-block">Please enter a valid email</p>
+
+            <textarea class="contactArea" placeholder="Message" name="message" rows="8" cols="80" ng-model="user.message" autocomplete="off"
+              required></textarea>
+            <p ng-show="userForm.message.$invalid && !userForm.message.$pristine && submitted" class="help-block">Please enter a message</p>
+
+            <button type="submit" class="sendButton">
+              <i class="material-icons">check_circle</i>SEND</button>
+
+          </form>
+
+
+          <div id="contactMe">
+            <div class="myInformation">
+              <i class="material-icons">home</i>Provo, Utah Area</div>
+            <div class="myInformation">
+              <i class="material-icons">phone</i>801 234 0170</div>
+            <div class="myInformation">
+              <i class="material-icons">email</i>mjacobson7@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="reserved">Max Jacobson © 2016</div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.6.1/angular-touch.min.js" charset="utf-8"></script>
-    <script src="./mainController.js" charset="utf-8"></script>
-    <script src="./jquery.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/sweetalert2/6.3.0/sweetalert2.min.js" charset="utf-8"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-touch.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.6.1/angular-touch.min.js" charset="utf-8"></script>
+  <script src="./mainController.js" charset="utf-8"></script>
+  <script src="./jquery.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/sweetalert2/6.3.0/sweetalert2.min.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-touch.js" charset="utf-8"></script>
 
-    <!-- GOOGLE ANALYTICS -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <!-- GOOGLE ANALYTICS -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-90187222-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </body>
+    ga('create', 'UA-90187222-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
 </html>

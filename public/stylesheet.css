@@ -760,6 +760,13 @@ li h5 span {
   font-size: 20px;
 }
 
+.jobTitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top:5px;
+}
+
 .collegeDescription {
   color: #807d7c;
   line-height: 20px;
